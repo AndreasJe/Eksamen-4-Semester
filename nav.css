@@ -245,6 +245,13 @@ footer {
   margin-top: 3rem !important;
 }
 
+.comp_wrapper:hover {
+  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.25s;
+}
+
 .comp_wrapper h3 {
   margin-top: 10px;
   font-size: 18px !important;
@@ -262,6 +269,14 @@ footer {
   position: relative;
   background-color: #72AE73;
   color: #F4F5F0;
+}
+
+.mate-wrapper:hover {
+  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.25s;
+  transition-timing-function: ease;
 }
 
 .matpromo {
@@ -310,6 +325,7 @@ footer {
 .darkgreen-bg {
   background-color: #4A984D !important;
   color: #F4F5F0;
+  height: 80px;
 }
 
 .green {
@@ -851,7 +867,7 @@ footer h4 {
   }
 
   .cont-header {
-    margin-left: 24px;
+    margin-left: 9px;
     margin-top: 5px;
     margin-bottom: 10px;
   }
@@ -919,7 +935,7 @@ footer h4 {
   }
 
   h2 {
-    font-size: 30px !important;
+    font-size: 20px !important;
   }
 
   h3 {
@@ -936,7 +952,7 @@ footer h4 {
   }
 
   p {
-    font-size: 20px !important;
+    font-size: 17px !important;
     line-height: 1.2;
   }
 
@@ -973,6 +989,7 @@ footer h4 {
   .inset {
     width: 100px;
     height: 100%;
+    margin-left: 10px;
   }
 
   .cont-promo {
