@@ -132,6 +132,16 @@ button {
   font-weight: 500;
 }
 
+#breadcrumbs a {
+  font-family: 'Frutiger LT Pro 45 Light' !important;
+  font-size: 12px !important;
+  font-weight: 500;
+  margin-bottom: .5rem;
+  line-height: 1.2;
+  color: #72AE73;
+  margin-top: 0;
+}
+
 .inset {
   padding-right: 15px;
   width: 150px;
@@ -218,52 +228,12 @@ html {
   color: #72AE73;
 }
 
-#breadcrumbs {
-  color: #72AE73;
-  font-family: 'Frutiger LT Pro 67 Bold Condensed' !important;
-  font-size: 25px !important;
-  margin: 10px;
-  margin-left: 0;
-}
-
-.content-header {
-  margin-top: 100px;
-  margin-bottom: 58px;
-  text-align: center;
-  font-size: 25px !important;
-}
-
-.copy-txt {
-  margin: 31px;
-  margin-bottom: 100px;
-  text-align: center;
-}
-
-.divider-gfx1 {
-  position: absolute;
-  top: -30px;
-  left: 0;
-}
-
-.divider-gfx2 {
-  position: absolute;
-  bottom: -30px;
-  left: 0;
-}
-
 footer {
+  padding: 2rem;
   background-color: #72AE73;
-  height: 60px;
-  margin-top: 20px !important;
-}
-
-footer .col-4 h3 {
+  height: fit-content;
   color: #F4F5F0;
-  width: 100px;
-  margin: auto;
-  margin-top: 10px;
-  font-size: 15px !important;
-  padding: 0;
+  margin-top: 20px !important;
 }
 
 /* <!--____________________________ KOMPETENCEUDVIKLING _____________________________--> */
@@ -288,7 +258,7 @@ footer .col-4 h3 {
 .mate-wrapper {
   height: 60px;
   display: flex;
-  flex: row;
+  flex-direction: row;
   position: relative;
   background-color: #72AE73;
   color: #F4F5F0;
@@ -331,13 +301,101 @@ footer .col-4 h3 {
   display: none !important;
 }
 
+/* <!--____________________________ KOMPETENCEUDVIKLING - Underside _____________________________--> */
+.green-bg {
+  background-color: #72AE73;
+  color: #F4F5F0;
+}
+
+.darkgreen-bg {
+  background-color: #4A984D !important;
+  color: #F4F5F0;
+}
+
+.green {
+  background-color: #72AE73;
+  color: #F4F5F0 !important;
+  height: auto !important;
+}
+
+.white {
+  background-color: #F4F5F0 !important;
+  color: #72AE73 !important;
+  height: auto !important;
+}
+
 .relativewrapper {
   position: relative;
   padding: 3rem;
 }
 
+.spacer-xl {
+  height: 150px;
+}
+
 .spacer-l {
   height: 100px;
+}
+
+.spacer-m {
+  height: 60px;
+}
+
+.spacer-sm {
+  height: 30px;
+}
+
+#breadcrumbs {
+  color: #72AE73;
+  font-family: 'Frutiger LT Pro 67 Bold Condensed' !important;
+  font-size: 25px !important;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.content-header {
+  margin-top: 100px;
+  margin-bottom: 58px;
+  text-align: center;
+  font-size: 25px !important;
+}
+
+.copy-txt {
+  margin: 31px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.divider-gfx1 {
+  margin-bottom: -9px;
+  margin-left: -31px !important;
+  width: 100vw;
+  padding: 0;
+}
+
+.divider-gfx2 {
+  margin-top: -9px;
+  margin-left: -31px !important;
+  width: 100vw;
+  padding: 0;
+}
+
+.kategori-oversigt {
+  width: auto;
+}
+
+#Layer_2-2 {
+  min-width: 200px;
+}
+
+.relative {
+  position: relative;
+}
+
+.source {
+  text-align: center;
+  margin-top: -60px;
+  margin-bottom: 60px;
 }
 
 /* <!--__________________________________ NAV CONTAINERS _________________________________--> */
@@ -605,6 +663,7 @@ label {
   display: none;
 }
 
+/* Forside - Kompetenceudvikling: */
 .knapmpil {
   position: absolute;
   right: 0;
@@ -612,6 +671,7 @@ label {
   height: 30px;
 }
 
+/* Forside - Materialesamling: */
 .knapmpil2 {
   position: absolute;
   right: 0;
@@ -619,6 +679,14 @@ label {
   height: 50px;
 }
 
+.knapmpil3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+}
+
+/* Underside: */
 .explain-copy {
   color: #72AE73;
   font-family: 'Frutiger LT Pro 48 Light Condensed Italic' !important;
@@ -658,13 +726,17 @@ label {
   display: none;
 }
 
-.green {
-  background-color: #72AE73;
-  height: 100% !important;
+footer h4 {
+  font-size: 15px !important;
 }
 
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@---MEDIAQUIRES-----@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
-@media (min-width: 992px) {
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@---MEDIAQUIRES-----@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media (min-width: 750px) {
   h1 {
     font-size: 40px;
   }
@@ -829,30 +901,17 @@ label {
   }
 
   .divider-gfx1 {
-    position: absolute;
-    top: -178px;
-    left: 0;
+    margin-top: -9px !important;
+    margin-left: -31px !important;
+    width: 100vw;
+    padding: 0;
   }
 
   .divider-gfx2 {
-    position: absolute;
-    bottom: -178px;
-    left: 0;
-  }
-
-  .row .col-md-3 {
-    position: relative;
-    background-color: #72AE73;
-  }
-
-  .green-bg {
-    background-color: #72AE73;
-    color: #F4F5F0;
-  }
-
-  .darkgreen-bg {
-    background-color: #4A984D;
-    color: #F4F5F0;
+    margin-top: -32px !important;
+    margin-left: -50px !important;
+    width: 100vw;
+    padding: 0;
   }
 
   h1 {
@@ -922,7 +981,7 @@ label {
   }
 
   .kompe-ikon {
-    width: 150px;
+    width: 100%
   }
 
   .mat-ikon {
@@ -956,23 +1015,8 @@ label {
     display: block !important;
   }
 
-  footer {
-    height: 65px;
-    margin-top: 80px !important;
-    color: #72AE73;
-    text-align: center;
-    flex-direction: column;
-    padding: 0.2rem,
-  }
-
-  footer .col-4 {
-    width: 25.333333% !important;
-  }
-
-  footer .col-4 h3 {
-    width: 80%;
-    margin: 0;
-    padding: 1rem;
+  #breadcrumbs .row .col-2 {
+    width: 6.666667%;
   }
 
   /* <!--_______________________ Opmuntringsboks til forsiden_________________________--> */
@@ -1017,7 +1061,14 @@ label {
     background-color: #72AE73;
     height: 40vh;
     margin-bottom: 30px;
-    color: #F4F5F0;
+    color: #F4F5F0 !important;
+  }
+
+  .white {
+    background-color: #F4F5F0 !important;
+    height: 40vh;
+    margin-bottom: 30px;
+    color: ##72AE73 !important;
   }
 
   .content-header {
@@ -1026,6 +1077,14 @@ label {
     margin-bottom: 58px;
     text-align: center;
     font-size: 45px !important;
+  }
+
+  .content-subheader {
+    margin: 46px;
+    margin-top: 150px;
+    margin-bottom: 28px;
+    text-align: center;
+    font-size: 25px !important;
   }
 
   .copy-txt {
@@ -1046,5 +1105,46 @@ label {
   .btn-bg2 {
     width: 100% !important;
     position: relative !important;
+  }
+
+  .kategori-oversigt {
+    width: 100%;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 922px) {
+  .fixed-height {
+    height: 500px;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@---MEDIAQUIRES-----@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media (min-width: 1202px) {
+  .fixed-height {
+    height: 815px;
+  }
+
+  .kategori-oversigt {
+    width: 100vw;
+    max-width: 2000px;
+  }
+}
+
+@media (min-width: 1502px) {
+  .fixed-height {
+    height: 615px;
+  }
+
+  .kategori-oversigt {
+    width: 80vw;
+    max-width: 2000px;
   }
 }
