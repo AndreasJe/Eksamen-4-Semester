@@ -26,6 +26,64 @@
       height: 100%;
       width: 100%;
     }
+
+    #fix {
+      margin-bottom: 30px !important;
+    }
+
+    button {
+      width: 100% !important;
+    }
+
+    .bottom-box .row .col-6 {
+      width: 100% !important;
+    }
+
+    .mobil-wrap {
+      flex-direction: column !important;
+      width: 100% !important;
+    }
+
+    .fix2 {
+      padding: 0
+    }
+
+
+
+    @media (min-width: 750px) {
+
+      #fix {
+        margin-bottom: 0px !important;
+      }
+
+      .bottombox .row {
+        flex-direction: row !important;
+      }
+
+      button {
+        width: 200px !important;
+      }
+
+      h1 {
+        font-size: 50px !important;
+      }
+
+      .mobil-wrap {
+        flex-direction: row !important;
+      }
+
+      .bottom-box .row .col-6 {
+        width: 50% !important;
+      }
+
+    }
+
+
+    @media (min-width: 1200px) {
+      .top-container {
+        width: 50vw !important;
+      }
+    }
   </style>
 </head>
 
@@ -36,18 +94,19 @@
 
     <div id="content" class="white">
       <div class="container-fluid top-container">
-        <div class="spacer-m ">
+        <div class="spacer-m  ">
         </div>
         <h1 class="mx-auto d-block text-center mt-5">Velkommen til Nordicschools.app</h1>
-        <div class="spacer-l">
+        <div class="spacer-l hide">
 
         </div>
-        <p class=" copy d-block mx-auto">Velkommen til vores platform. Før du kan bruge vores indhold, skal du oprette en bruger og logge ind.<br><br>
+        <div class="spacer-m hide2">
+
+        </div>
+        <h3 class=" copy d-block mx-auto text-center pb-4 p-0">Er du klar til at udvikle dig fagligt?</h3>
+        <p class=" copy d-block mx-auto"> Før du kan bruge vores indhold, skal du oprette en bruger og logge ind.<br><br>
           Har du ikke en bruger, kan du oprette en her, eller vælge at opleve sitet i en demo-version</p>
         <div class="spacer-xl  ">
-
-        </div>
-        <div class="spacer-sm ">
 
         </div>
 
@@ -73,14 +132,21 @@
           </svg>
           <div class="spacer-m ">
           </div>
-          <div class="container w-30 mx-auto d-flex justify-content-between">
-            <button class="knap buttonwhite mx-auto" type="button" name="button" onclick="location.href='login.html'">Login</button>
-            <button class="knap buttonwhite mx-auto" type="button" name="button" onclick="location.href='opretbruger.html'">Opret bruger</button>
+          <div class="mobil-wrap  row w-30 mx-auto d-flex justify-content-between">
+            <div class="container-fluid col-6 p-0 m-0 mx-auto">
+              <button id="fix" class="knap buttonwhite d-block mx-auto " type="button" name="button" onclick="location.href='login.html'">Login</button>
 
+
+            </div>
+            <div class="container-fluid  col-6 p-0 m-0 mx-auto">
+              <button class="knap buttonwhite d-block mx-auto" type="button" name="button" onclick="location.href='opretbruger.html'">Opret bruger</button>
+
+
+            </div>
           </div>
           <div class="spacer-sm">
           </div>
-          <div class="container w-30  mx-auto d-flex justify-content-between">
+          <div class=" fix2 container w-30 row  mx-auto d-flex justify-content-between">
             <button class="knap buttonwhite mx-auto" type="button" name="button" onclick="location.href='index.html'">Vis demo</button>
 
           </div>

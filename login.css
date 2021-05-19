@@ -3,16 +3,6 @@
   height: 100vh !important;
 }
 
-#login-header {
-  margin: 83px;
-  margin-top: 156px;
-  margin-bottom: 60px;
-  text-align: center;
-  font-size: 45px !important;
-  color: #72AE73 !important;
-  font-family: 'Frutiger LT Pro 65 Bold' !important;
-}
-
 .top-container {
   height: 100%;
 }
@@ -30,7 +20,7 @@
 
 .bottom-box {
   height: 50vh !important;
-  width: 100vw !important;
+  width: 100% !important;
   position: absolute;
   background-color: #72AE73 !important;
   bottom: 0;
@@ -91,15 +81,19 @@ svg {
 
 .login-form-field::placeholder {
   color: #72AE73;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .login-form-field {
+  color: #72AE73;
   font-family: 'Frutiger LT Pro 45 Light';
   border: none;
   background-color: #f4f5f0;
   border-bottom: 1px solid #72AE73;
   margin-bottom: 10px;
   outline: none;
+  font-size: 15px;
   padding: 11px 8px 1px 5px;
 }
 
@@ -120,23 +114,26 @@ input#username-field {
 }
 
 .back {
-  width: 80% !important;
+  width: 100vw !important;
   margin-top: 25px;
-  padding: 1rem;
   flex-direction: row;
-  display: flex;
+  display: flex !important;
   align-content: flex-start;
+  height: 40px;
 }
 
 .back img {
-  width: 50px;
-  margin-bottom: 10px;
+  width: 40px;
+  margin: 0;
 }
 
 .back h3 {
-  width: 100px;
+  height: auto;
+  width: 110px;
   text-align: center;
   display: flex;
+  margin: 0;
+  padding: 0.3rem;
   align-self: center;
 }
 
@@ -146,7 +143,6 @@ input#username-field {
 
 #oplysninger {
   width: 250px;
-  margin-top: 200px;
   display: block;
   color: white;
   z-index: 5;
@@ -154,6 +150,7 @@ input#username-field {
   position: absolute;
   font-family: 'Frutiger LT Pro 65 Bold' !important;
   left: 50%;
+  bottom: 0;
 }
 
 @media (min-width: 750px) {
@@ -165,12 +162,54 @@ input#username-field {
     width: 150px;
   }
 
+  .hide {
+    display: flex !important;
+    height: auto;
+  }
+
   svg {
     top: -46px;
-    width: 104vw;
+    width: 110vw;
   }
 
   .copy {
-    width: 40% !important;
+    width: 50% !important;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .back {
+    margin-top: 50px;
+  }
+
+  #oplysninger {
+    bottom: 50px;
+  }
+
+  #username-field {
+    margin-top: 4rem;
+  }
+
+  #login-error-msg {
+    margin-top: 2rem;
+  }
+
+  .mobil-wrap {
+    flex-direction: column !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .divider-gfx-login {
+    margin-left: -110px !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  svg {
+    width: 109%;
+    overflow: hidden;
   }
 }

@@ -35,24 +35,23 @@
 
     <div id="content" class="white">
 
-      <div class="container back">
+      <div class="container back d-flex align-items-baseline">
         <a href="login_oversigt.html">
           <img class=" d-block" src="ico/tilbage-knap.svg" alt="cirkel med pil i, der vender mod venstre">
         </a>
-        <h3 class="d-block">Gå tilbage</h3>
+        <h3 class="d-flex">Gå tilbage</h3>
       </div>
-      <h1 id="login-header" class="mx-auto white">Opret bruger</h1>
+      <h1 class="mx-auto d-block text-center mt-5 white">Opret bruger</h1>
 
 
       <form id="login-form" class="mx-auto white">
         <input type="text" name="name" id="name-field" class="login-form-field" placeholder="Fulde navn">
-        <input type="password" name="school" id="school-field" class="login-form-field" placeholder="Skole">
+        <input type="text" name="school" id="school-field" class="login-form-field" placeholder="Skole">
         <input type="text" name="username" id="email-field" class="login-form-field" placeholder="Email">
         <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Adgangskode">
         <input type="password" name="confirm-password" id="confirm-password-field" class="login-form-field" placeholder="Bekræft Adgangskode">
 
         <em>*Ved at oprette en bruger godkender du vores<br> privatlivspolitik og brugerbetingelser.</em>
-        <input type="submit" value="Opret bruger" id="login-form-submit">
       </form>
 
       <div class="container-fluid green bottom-box">
@@ -75,6 +74,7 @@
           </svg>
 
 
+          <button class="knap d-block buttonwhite mx-auto" style="margin-top:40px;" type="button" name="button" onclick="location.href='login.html'">Opret Bruger</button>
 
         </div>
       </div>

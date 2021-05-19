@@ -163,6 +163,10 @@ html {
   margin: auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -316,6 +320,11 @@ footer {
   display: block !important;
 }
 
+.hide3 {
+  display: block;
+  ;
+}
+
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -422,6 +431,73 @@ footer {
   text-align: center;
   margin-top: -60px;
   margin-bottom: 60px;
+}
+
+/* <!--____________________________ LANDING PAGE FOR NYE BRUGERE _____________________________--> */
+.stylish-header {
+  font-family: 'Frutiger LT Pro 67 Bold Condensed';
+  width: 100%;
+  text-align: center;
+  font-size: 30px !important;
+  margin-bottom: -15px;
+  margin-top: 70px;
+}
+
+.stylish-subheader {
+  font-family: 'Frutiger LT Pro 47 Light Condensed';
+  width: 100%;
+  text-align: center;
+  font-size: 60px !important;
+  font-variant: all-small-caps;
+}
+
+.copy-cta {
+  width: 100%;
+}
+
+.oversigt {
+  width: 60%;
+  margin-right: calc(var(--bs-gutter-x)/ -2);
+  margin-left: calc(var(--bs-gutter-x)/ -2);
+  display: block;
+}
+
+.top-promote {
+  font-size: 29px !important;
+  position: absolute;
+  width: 707px;
+  left: 50%;
+  top: 20%;
+  margin-left: -177px;
+  font-family: 'Frutiger LT Pro 67 Bold Condensed';
+}
+
+.middle-promote {
+  position: absolute;
+  width: 310px;
+  left: 45%;
+  top: 43%;
+  margin-left: -150px;
+  font-family: 'Frutiger LT Pro 47 Light Condensed';
+  font-size: 45px !important;
+}
+
+.bottom-promote {
+  position: absolute;
+  width: 300px;
+  left: 81%;
+  top: 86%;
+  margin-left: -150px;
+  font-family: 'Frutiger LT Pro 67 Bold Condensed';
+}
+
+.visuel-guide {
+  width: 100%;
+  left: 10px;
+  top: 40%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
 }
 
 /* <!--__________________________________ NAV CONTAINERS _________________________________--> */
@@ -1136,7 +1212,7 @@ footer h4 {
     background-color: #F4F5F0 !important;
     height: 40vh;
     margin-bottom: 30px;
-    color: ##72AE73 !important;
+    color: #72AE73 !important;
   }
 
   .content-header {
@@ -1159,6 +1235,7 @@ footer h4 {
     margin: 75px;
     margin-bottom: 100px;
     text-align: center;
+    width: 60%;
   }
 
   .explain-copy {
@@ -1181,6 +1258,47 @@ footer h4 {
 
   footer {
     padding: 1rem;
+  }
+
+  /* LandingPage Styling */
+  .top-promote {
+    font-size: 34px !important;
+    position: absolute;
+    width: 707px;
+    left: 40%;
+    top: -13%;
+    margin-left: -177px;
+    font-family: 'Frutiger LT Pro 67 Bold Condensed';
+  }
+
+  .middle-promote {
+    position: absolute;
+    width: 310px;
+    left: 31%;
+    top: 9%;
+    margin-left: -150px;
+    font-family: 'Frutiger LT Pro 47 Light Condensed';
+    font-size: 80px !important;
+  }
+
+  .bottom-promote {
+    left: 73%;
+    top: 87%;
+    font-family: 'Frutiger LT Pro 67 Bold Condensed';
+    font-size: 34px !important;
+    position: absolute;
+    width: 707px;
+    margin-left: -177px;
+  }
+
+  .visuel-guide {
+    width: 400px;
+    left: 50%;
+    top: 45%;
+    margin-left: -200px !important;
+    margin: 0;
+    padding: 0;
+    position: absolute;
   }
 }
 
@@ -1214,5 +1332,26 @@ footer h4 {
   .kategori-oversigt {
     width: 80vw;
     max-width: 2000px;
+  }
+
+  .visuel-guide {
+    width: 431px;
+    left: 84%;
+    top: 11%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+  }
+
+  .specifik1 {
+    margin-bottom: .25rem !important;
+  }
+
+  .specifik2 {
+    margin-top: .25rem !important;
+  }
+
+  .hide3 {
+    display: none !important;
   }
 }
