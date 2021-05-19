@@ -22,8 +22,21 @@
       margin-right: auto;
     }
 
+    a {
+
+      font-family: 'Frutiger LT Pro 45 Light' !important;
+      font-size: 15px !important;
+      cursor: pointer;
+      text-decoration: none;
+      color: #72AE73 !important;
+    }
+
     #nav-main {
       overflow-y: scroll;
+    }
+
+    #content {
+      margin-bottom: 0;
     }
 
     .kompe-ikon {
@@ -43,6 +56,16 @@
     .copy-txt {
 
       margin-bottom: 75px;
+    }
+
+    .top-right {
+      justify-content: flex-end;
+      display: flex;
+    }
+
+    .top-right a {
+      color: #72AE73 !important;
+      padding: 0.5rem;
     }
 
 
@@ -101,7 +124,7 @@
       <!--_________ Section 1 __________-->
 
       <div class="container-fluid  white">
-        <div class="spacer-l">
+        <div class="spacer-xl">
 
         </div>
         <div class="container">
@@ -116,9 +139,9 @@
 
 
         </div>
-        <button class="button buttonwhite" onclick="location.href='#';"> Læs mere </button>
+        <button class="button buttongreen mx-auto d-block mt-5"><a href="#kom-her"> Læs mere </a></button>
 
-        <div class="spacer-l">
+        <div class="spacer-xl">
 
         </div>
       </div>
@@ -145,7 +168,7 @@
 
 
       </div>
-      <div class="container-fluid green relativewrapper">
+      <div id="kom-her" class="container-fluid green relativewrapper">
 
         <div class="container-fluid">
           <div class="container">
@@ -182,6 +205,7 @@
             <p class="copy-txt mx-auto" style="text-align:left;">Hver kompetence er inddelt i fire kategorier. Kategorierne beskriver centrale dele af den adfærd, der knytter sig til den pågældende kompetence.
 
             </p>
+            <button class="button buttonwhite mx-auto d-block mt-5"><a href="#kom-her" style="color:#f4f5f0!important;"> Hvordan gør jeg? </a></button>
           </div>
         </div>
 
@@ -305,7 +329,7 @@
       </div>
 
 
-      <footer class="d-flex justify-content-between  row">
+      <footer class="d-flex justify-content-between pb-0 mb-0 row">
         <div class="col-6 ">
           <h4>Tlf: 34234354 </h4>
           <h4>Email: info@nordicschools.com </h4>

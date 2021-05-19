@@ -3,6 +3,15 @@
   height: 100vh !important;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 40px !important;
+}
+
 .top-container {
   height: 100%;
 }
@@ -162,6 +171,10 @@ input#username-field {
     width: 150px;
   }
 
+  h1 {
+    font-size: 50px !important;
+  }
+
   .hide {
     display: flex !important;
     height: auto;
@@ -169,15 +182,11 @@ input#username-field {
 
   svg {
     top: -46px;
-    width: 110vw;
+    width: 117%;
   }
 
   .copy {
     width: 50% !important;
-  }
-
-  h1 {
-    font-size: 30px;
   }
 
   .back {
@@ -201,15 +210,12 @@ input#username-field {
   }
 }
 
-@media (min-width: 1200px) {
-  .divider-gfx-login {
-    margin-left: -110px !important;
-  }
-}
+@media (min-width: 1200px) {}
 
 @media (min-width: 1600px) {
   svg {
-    width: 109%;
+    width: 111%;
     overflow: hidden;
+    margin-left: -63px !important;
   }
 }

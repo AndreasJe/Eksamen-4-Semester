@@ -124,6 +124,7 @@ a {
   font-family: 'Frutiger LT Pro 45 Light' !important;
   font-size: 20px !important;
   font-weight: 500;
+  text-decoration: underline;
 }
 
 button {
@@ -151,6 +152,7 @@ button {
 /* <!--__________________________________ BODY _________________________________--> */
 body,
 html {
+  scroll-behavior: smooth !important;
   max-width: 2000px;
   box-shadow: 0px 0px 16px #888888;
   background-color: #f4f5f0 !important;
@@ -165,6 +167,7 @@ html {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth !important;
 }
 
 ::-webkit-scrollbar {
@@ -212,6 +215,7 @@ html {
   overflow: scroll;
   overflow-x: hidden;
   background-color: #F4F5F0;
+  scroll-behavior: smooth;
 }
 
 .divider-kat {
