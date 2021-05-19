@@ -1,0 +1,176 @@
+#content {
+  background-color: #F4F5F0 !important;
+  height: 100vh !important;
+}
+
+#login-header {
+  margin: 83px;
+  margin-top: 156px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 45px !important;
+  color: #72AE73 !important;
+  font-family: 'Frutiger LT Pro 65 Bold' !important;
+}
+
+.top-container {
+  height: 100%;
+}
+
+.divider-gfx-login {
+  background-color: #72AE73 !important;
+  margin-left: -20px !important;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+
+.bottom-box {
+  height: 50vh !important;
+  width: 100vw !important;
+  position: absolute;
+  background-color: #72AE73 !important;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+
+svg {
+  top: -37px;
+  position: absolute;
+  left: -40px;
+  display: block;
+  height: 70px;
+  width: 125vw;
+  margin-bottom: 9px;
+  z-index: 1
+}
+
+.copy {
+  width: 85% !important;
+}
+
+#login-error-msg-holder {
+  width: 100vw;
+  height: 100%;
+  display: grid;
+  padding: 0;
+  display: block;
+  background-color: #72AE73 !important;
+  margin-bottom: 72px;
+  justify-items: center;
+  align-items: center;
+}
+
+#login-error-msg {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  color: #F4F5F0 !important;
+  background-color: #72AE73 !important;
+  opacity: 0;
+  font-family: 'Frutiger LT Pro 65 Bold' !important;
+}
+
+#error-msg-second-line {
+  display: block;
+  background-color: #72AE73 !important;
+}
+
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.login-form-field::placeholder {
+  color: #72AE73;
+}
+
+.login-form-field {
+  font-family: 'Frutiger LT Pro 45 Light';
+  border: none;
+  background-color: #f4f5f0;
+  border-bottom: 1px solid #72AE73;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 11px 8px 1px 5px;
+}
+
+#login-form-submit {
+  width: 150px;
+  margin-top: 70px;
+  padding: 7px;
+  border: 3px solid #f4f5f0;
+  color: #F4F5F0;
+  font-weight: bold;
+  background-color: #72AE73;
+  cursor: pointer;
+  outline: none;
+}
+
+input#username-field {
+  color: #72AE73;
+}
+
+.back {
+  width: 80% !important;
+  margin-top: 25px;
+  padding: 1rem;
+  flex-direction: row;
+  display: flex;
+  align-content: flex-start;
+}
+
+.back img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.back h3 {
+  width: 100px;
+  text-align: center;
+  display: flex;
+  align-self: center;
+}
+
+.buttonwhite {
+  background-color: #72AE73;
+}
+
+#oplysninger {
+  width: 250px;
+  margin-top: 200px;
+  display: block;
+  color: white;
+  z-index: 5;
+  margin-left: -125px !important;
+  position: absolute;
+  font-family: 'Frutiger LT Pro 65 Bold' !important;
+  left: 50%;
+}
+
+@media (min-width: 750px) {
+  #content {
+    height: 100vh !important;
+  }
+
+  .knap {
+    width: 150px;
+  }
+
+  svg {
+    top: -46px;
+    width: 104vw;
+  }
+
+  .copy {
+    width: 40% !important;
+  }
+}

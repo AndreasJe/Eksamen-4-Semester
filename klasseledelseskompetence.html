@@ -222,8 +222,6 @@
 
     </div>
     <!--__________________________________ NAVIGATION _________________________________-->
-
-
     <input type="checkbox" id="myInput">
     <svg class="bobbel" height="100" width="100">
       <circle cx="200" cy="200" r="200" stroke="#F4F5F0" stroke-width="5" fill="#72AE73" />
@@ -236,25 +234,64 @@
     <aside>
       <div class="aside-section aside-left">
         <img src="user.jpg" class="d-flex rounded-circle mx-auto userpic" alt="penis">
-        <p class="brugernavn p-3">Peter Svendsen</p><svg class="d-flex mx-auto" height="5" width="50">
+        <p class="brugernavn p-3 pb-0">Peter Svendsen</p>
+        <p class="skole p-3 pt-1">Højby Lilleskole</p>
+
+        <svg class="d-flex mx-auto" height="5" width="50">
           <svg height="10" width="100">
             <line x1="0" y1="0" x2="100" y2="0" style="stroke:#F4F5F0;stroke-width:3" />
           </svg>
-          <p class="skole p-3">Højby Lilleskole</p>
+
+          <div class="container w-75 ">
+            <h3 class="green mt-3" style="margin-left:10px;margin-bottom:-10px;">Dine kvalifikationer:</h3>
+          </div>
+          <div class="row qualities p-2 m-0 ">
+            <div class="col-6 mx-auto p-3 pb-0">
+
+              <img src="ico/kat5_ikon.svg" alt="Kategori 5 – Starte og slutte stærkt">
+              <h3>Kategori 5:<br>Starte og slutte stærkt</h3>
+            </div>
+            <div class="col-6 mx-auto p-3 pb-0">
+              <img src=" ico/kat6_ikon.svg" alt="Kategori 6 – Motivere og skabe mening">
+              <h3>Kategori 6:<br>Motivere og skabe mening</h3>
+            </div>
+            <div class="col-6 mx-auto p-3 pt-0">
+              <img src=" ico/kat10_ikon.svg" alt="Kategori 11: Danne relationer til hver enkelt elev">
+              <h3>Kategori 11:<br>Danne relationer til hver enkelt elev</h3>
+            </div>
+            <div class="col-6 mx-auto p-3 pt-0">
+              <img src=" ico/kat12_ikon.svg" alt="Kategori 12: Få eleverne til at danne relationer til hinanden">
+              <h3>Kategori 12:<br>Få eleverne til at danne relationer til hinanden</h3>
+            </div>
+
+          </div>
+
+
           <div class="aside-content">
             <div class="container d-flex justify-content-between">
-              <button class="buttonwhite button"> Indstillinger </button>
-              <button class="buttonwhite button"> Logud </button>
+              <button class="button buttonwhite" onclick="location.href='indstilligner.html';"> Indstillinger </button>
+              <button class="button buttonwhite" onclick="location.href='login_oversigt.html';"> Logud </button>
             </div>
           </div>
       </div>
       <div class="aside-section aside-right">
         <div class="container-fluid pt-5" id="usermobile">
-          <img src="user.jpg" class="d-flex rounded-circle mx-auto userpic" alt="penis">
-          <p class="brugernavn">Peter Svendsen</p><svg class="d-block mx-auto" height="5" width="50">
-            <line x1="0" y1="0" x2="100" y2="0" style="stroke:#F4F5F0;stroke-width:3" />
-          </svg>
-          <p class="skole">Højby Lilleskole</p>
+
+          <div class="wrapper-brugerui">
+
+            <div class="container">
+              <img src="user.jpg" class="d-flex rounded-circle mx-auto userpic" alt="penis">
+            </div>
+            <div class="container">
+              <p class="brugernavn">Peter Svendsen</p><svg class="d-block mx-auto" height="5" width="50">
+                <line x1="0" y1="0" x2="100" y2="0" style="stroke:#F4F5F0;stroke-width:3" />
+              </svg>
+              <p class="skole">Højby Lilleskole</p>
+
+
+            </div>
+
+          </div>
           <div class="container  d-flex p-3 mt-3 justify-content-between">
             <button class="button buttonwhite"> Indstillinger </button>
             <button class="button buttonwhite"> Logud </button>
@@ -268,7 +305,6 @@
         </ul>
       </div>
     </aside>
-
     <!--__________________________________ NAVIGATION SLUT _________________________________-->
 
   </main>
