@@ -42,10 +42,10 @@ h1 {
 #divider {
   top: -37px;
   position: absolute;
-  left: -40px;
+  left: -245%;
   display: block;
-  height: 70px;
-  width: 125%;
+  height: 55px;
+  width: 448%;
   margin-bottom: 9px;
   z-index: 1
 }
@@ -183,8 +183,9 @@ input#username-field {
   }
 
   #divider {
-    top: -46px;
-    width: 110%;
+    top: -40px;
+    width: 351%;
+    left: -125%;
   }
 
   .divider-gfx-login {
@@ -211,9 +212,7 @@ input#username-field {
     margin-top: 4rem;
   }
 
-  #login-error-msg {
-    margin-top: 2rem;
-  }
+  #login-error-msg {}
 
   .mobil-wrap {
     flex-direction: column !important;
@@ -227,6 +226,15 @@ input#username-field {
     padding-top: 0;
     padding-bottom: 0;
     background-color: #F4F5F0
+  }
+
+  .copy {
+    width: 75% !important;
+  }
+
+  #divider {
+    top: -39px;
+    width: 315%;
   }
 }
 
@@ -242,10 +250,11 @@ input#username-field {
 
 @media (min-width: 1600px) {
   #divider {
-    width: 110%;
+    width: 714%;
     overflow: hidden;
-    top: -57px;
-    margin-left: -63px !important;
+    top: -70px;
+    height: 70px;
+    margin-left: -179.5%;
   }
 
   .divider-gfx-login {
