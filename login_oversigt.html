@@ -49,6 +49,16 @@
       padding: 0
     }
 
+    #content {
+
+      overflow: hidden;
+      height: 100% !important;
+
+    }
+
+    .top-container {}
+
+
 
 
     @media (min-width: 750px) {
@@ -74,12 +84,25 @@
         width: 50% !important;
       }
 
+      .top-container {
+        width: 80vw !important;
+        padding-top: 100px;
+      }
+
     }
 
+
+    @media (min-width: 922px) {
+      .top-container {
+        width: 60vw !important;
+        padding-top: 150px;
+      }
+    }
 
     @media (min-width: 1200px) {
       .top-container {
         width: 50vw !important;
+        padding-top: 200px;
       }
     }
   </style>
@@ -92,18 +115,21 @@
 
     <div id="content" class="white">
       <div class="container-fluid top-container">
-        <div class="spacer-m  ">
+        <div class="spacer-m hide3 ">
         </div>
-        <h1 class="mx-auto d-block text-center mt-5">Velkommen til Nordicschools.app</h1>
+        <h1 class="mx-auto d-block text-center mt-2">Velkommen til Nordicschools.app</h1>
         <div class="spacer-l hide">
 
         </div>
-        <div class="spacer-m hide2">
+        <div class="spacer-sm hide2">
 
         </div>
         <h3 class=" copy d-block mx-auto text-center pb-4 p-0">Er du klar til at udvikle dig fagligt?</h3>
         <p class=" copy d-block mx-auto"> Før du kan bruge vores indhold, skal du oprette en bruger og logge ind.<br><br>
           Har du ikke en bruger, kan du oprette en her, eller vælge at opleve sitet i en demo-version</p>
+        <div class="spacer-xl  ">
+
+        </div>
         <div class="spacer-xl  ">
 
         </div>
@@ -128,7 +154,7 @@
               </g>
             </g>
           </svg>
-          <div class="spacer-m ">
+          <div class="spacer-sm ">
           </div>
           <div class="mobil-wrap  row w-30 mx-auto d-flex justify-content-between">
             <div class="container-fluid col-6 p-0 m-0 mx-auto">

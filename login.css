@@ -1,3 +1,7 @@
+html {
+  background-color: #F4F5F0 !important;
+}
+
 #content {
   background-color: #F4F5F0 !important;
   height: 100vh !important;
@@ -17,14 +21,12 @@ h1 {
 }
 
 .divider-gfx-login {
-  background-color: #72AE73 !important;
-  margin-left: -20px !important;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  padding: 0;
-  margin: 0;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  padding: 10rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #F4F5F0 !important;
 }
 
 .bottom-box {
@@ -37,13 +39,13 @@ h1 {
   margin: 0;
 }
 
-svg {
+#divider {
   top: -37px;
   position: absolute;
   left: -40px;
   display: block;
   height: 70px;
-  width: 125vw;
+  width: 125%;
   margin-bottom: 9px;
   z-index: 1
 }
@@ -180,9 +182,17 @@ input#username-field {
     height: auto;
   }
 
-  svg {
+  #divider {
     top: -46px;
-    width: 117%;
+    width: 110%;
+  }
+
+  .divider-gfx-login {
+    width: 100% !important;
+    padding: 10rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #F4F5F0
   }
 
   .copy {
@@ -210,12 +220,39 @@ input#username-field {
   }
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 922px) {
+  .divider-gfx-login {
+    width: 80% !important;
+    padding: 10rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #F4F5F0
+  }
+}
+
+@media (min-width: 1200px) {
+  .divider-gfx-login {
+    width: 60% !important;
+    padding: 10rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #F4F5F0
+  }
+}
 
 @media (min-width: 1600px) {
-  svg {
-    width: 111%;
+  #divider {
+    width: 110%;
     overflow: hidden;
+    top: -57px;
     margin-left: -63px !important;
+  }
+
+  .divider-gfx-login {
+    width: 45% !important;
+    padding: 10rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #F4F5F0
   }
 }

@@ -127,12 +127,6 @@ a {
   text-decoration: underline;
 }
 
-button {
-  font-family: 'Frutiger LT Pro 57 Condensed' !important;
-  font-size: 20px !important;
-  font-weight: 500;
-}
-
 #breadcrumbs a {
   font-family: 'Frutiger LT Pro 45 Light' !important;
   font-size: 12px !important;
@@ -223,9 +217,11 @@ html {
 }
 
 .logo {
-  height: 70px;
+  height: 50px;
   position: absolute;
-  left: 15px;
+  left: 28px;
+  top: 50%;
+  margin-top: -25px;
 }
 
 .logobox {
@@ -495,10 +491,15 @@ footer {
   font-family: 'Frutiger LT Pro 67 Bold Condensed';
 }
 
+.deskt {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .visuel-guide {
-  width: 100%;
-  left: 10px;
-  top: 40%;
+  width: 80%;
+  left: 10%;
+  top: 38%;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -1156,7 +1157,7 @@ footer h4 {
   }
 
   .qualities .col-6 img {
-    width: 40%;
+    width: 100%;
     margin-left: auto;
     display: block;
     margin-right: auto;
@@ -1298,11 +1299,17 @@ footer h4 {
   .visuel-guide {
     width: 400px;
     left: 50%;
-    top: 45%;
+    top: 43%;
     margin-left: -200px !important;
     margin: 0;
     padding: 0;
     position: absolute;
+  }
+
+  .slimshady {
+    width: 90% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
   }
 }
 
@@ -1314,6 +1321,18 @@ footer h4 {
   footer {
     padding: 1rem;
   }
+
+  p {
+    font-size: 20px !important;
+    line-height: 1.2;
+  }
+
+  .qualities .col-6 img {
+    width: 70%;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+  }
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@---MEDIAQUIRES-----@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -1322,9 +1341,59 @@ footer h4 {
     height: 815px;
   }
 
+  .slimshady {
+    width: 80% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
   .kategori-oversigt {
     width: 100vw;
     max-width: 2000px;
+  }
+
+  .top-promote {
+    font-size: 55px !important;
+    left: 37%;
+    top: 20%;
+  }
+
+  .middle-promote {
+    width: 800px;
+    left: 50%;
+    top: 33%;
+    margin-left: -400px;
+    font-size: 111px !important;
+  }
+
+  .bottom-promote {
+    left: 65%;
+    top: 67%;
+    font-size: 55px !important;
+    width: 707px;
+    margin-left: -177px;
+  }
+
+  .deskt {
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .qualities .col-6 img {
+    width: 40%;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+  }
+
+  .stylish-header {
+    font-size: 34px !important;
+    margin-bottom: -25px;
+  }
+
+  .stylish-subheader {
+    font-size: 100px !important;
   }
 }
 
@@ -1357,5 +1426,20 @@ footer h4 {
 
   .hide3 {
     display: none !important;
+  }
+
+  .slimshady {
+    width: 50% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+}
+
+@media (min-width: 2202px) {
+  .qualities .col-6 img {
+    width: 25%;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
   }
 }
