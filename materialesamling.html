@@ -5,9 +5,27 @@
 <!--__________________________________ HEAD _________________________________-->
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WZ3ZMTT');
+  </script>
+  <!-- End Google Tag Manager -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <title>Velkommen til Nordicschools.app</title>
+  <title>Materialesamling - Prototype</title>
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="login.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -37,130 +55,52 @@
       margin-top: 18px;
     }
   </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6Z7TQN0CSP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-6Z7TQN0CSP');
+  </script>
 </head>
 
 <body>
-
-  <main id="nav-main">
-
-
-    <div id="content" class="white">
-
-      <div class="container back d-flex align-items-baseline">
-        <a class="row" href="javascript:history.back()">
-          <img class=" d-block" src="ico/tilbage-knap.svg" alt="cirkel med pil i, der vender mod venstre">
-          <h3 class="d-flex">Gå tilbage</h3>
-        </a>
-      </div>
-      <div class="container p-5 mt-5 green shadow">
-
-        <h1 class="mx-auto d-block text-center mt-5 ">Materialesamling kommer!</h1>
-        <p class="copy-txt mx-auto">Her kommer der forhåbentligt en materialesamling - hvis jeg kan nå det...<br><br>Se prototype nedenfor:
-        </p>
-      </div>
-
-      <img class="W-80 mx-auto d-block" src="img/pruttetype.png" alt="">
-
-    </div>
-    <!--__________________________________ NAVIGATION _________________________________-->
-
-
-    <input type="checkbox" id="myInput">
-    <svg class="bobbel" height="100" width="100">
-      <circle cx="200" cy="200" r="200" stroke="#F4F5F0" stroke-width="5" fill="#72AE73" />
-    </svg>
-    <label for="myInput">
-      <span class="bar top"></span>
-      <span class="bar middle"></span>
-      <span class="bar bottom"></span>
-    </label>
-    <aside>
-      <div class="aside-section aside-left">
-        <img src="user.jpg" class="d-flex rounded-circle mx-auto userpic" alt="penis">
-        <p class="brugernavn p-3 pb-0">Peter Svendsen</p>
-        <p class="skole p-3 pt-1">Højby Lilleskole</p>
-
-        <svg class="d-flex mx-auto" height="5" width="50">
-          <svg height="10" width="100">
-            <line x1="0" y1="0" x2="100" y2="0" style="stroke:#F4F5F0;stroke-width:3" />
-          </svg>
-          <div class="container w-75 ">
-
-            <h3 class="green mt-3" style="margin-left:10px;margin-bottom:-10px;">Dine kvalifikationer:</h3>
-
-          </div>
-          <div class="row qualities p-2 m-0 ">
-            <div class="col-6 mx-auto p-3 pb-0">
-
-              <img src="ico/kat5_ikon.svg" alt="Kategori 5 – Starte og slutte stærkt">
-              <h3>Kategori 5:<br>Starte og slutte stærkt</h3>
-            </div>
-            <div class="col-6 mx-auto p-3 pb-0">
-              <img src=" ico/kat6_ikon.svg" alt="Kategori 6 – Motivere og skabe mening">
-              <h3>Kategori 6:<br>Motivere og skabe mening</h3>
-            </div>
-            <div class="col-6 mx-auto p-3 pt-0">
-              <img src=" ico/kat10_ikon.svg" alt="Kategori 11: Danne relationer til hver enkelt elev">
-              <h3>Kategori 11:<br>Danne relationer til hver enkelt elev</h3>
-            </div>
-            <div class="col-6 mx-auto p-3 pt-0">
-              <img src=" ico/kat12_ikon.svg" alt="Kategori 12: Få eleverne til at danne relationer til hinanden">
-              <h3>Kategori 12:<br>Få eleverne til at danne relationer til hinanden</h3>
-            </div>
-
-          </div>
-
-
-          <div class="aside-content">
-            <div class="container d-flex justify-content-between">
-              <button class="button buttonwhite" onclick="location.href='indstilligner.html';"> Indstillinger </button>
-              <button class="button buttonwhite" onclick="location.href='login_oversigt.html';"> Logud </button>
-            </div>
-          </div>
-      </div>
-      <div class="aside-section aside-right">
-        <div class="container-fluid pt-5" id="usermobile">
-
-          <div class="wrapper-brugerui">
-
-            <div class="container">
-              <img src="user.jpg" class="d-flex rounded-circle mx-auto userpic" alt="penis">
-            </div>
-            <div class="container">
-              <p class="brugernavn">Peter Svendsen</p><svg class="d-block mx-auto" height="5" width="50">
-                <line x1="0" y1="0" x2="100" y2="0" style="stroke:#F4F5F0;stroke-width:3" />
-              </svg>
-              <p class="skole">Højby Lilleskole</p>
-
-
-            </div>
-
-          </div>
-          <div class="container  d-flex p-3 mt-3 justify-content-between">
-            <button class="button buttonwhite" onclick="location.href='indstilligner.html';"> Indstillinger </button>
-            <button class="button buttonwhite" onclick="location.href='login_oversigt.html';"> Logud </button>
-          </div>
-        </div>
-        <ul class="aside-list">
-          <li><a href="index.html" class="aside-anchor">Forside</a></li>
-          <li><a href="analyse.html" class="aside-anchor">Din Analyse</a></li>
-          <li><a href="kompetencer.html" class="aside-anchor">Anbefalet indhold</a></li>
-          <li><a href="materialesamling.html" class="aside-anchor">Materialesamling</a></li>
-        </ul>
-      </div>
-    </aside>
-
-    <!--__________________________________ NAVIGATION SLUT _________________________________-->
-
-  </main>
-
-
-  <!--__________________________________ SCRIPTS _________________________________-->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-
-
-  </script>
-</body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ3ZMTT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
 </html>
+
+<main id="nav-main">
+
+
+  <div id="content" class="white">
+
+    <div class="container back d-flex align-items-baseline">
+      <a class="row" href="javascript:history.back()">
+        <img class=" d-block" src="ico/tilbage-knap.svg" alt="cirkel med pil i, der vender mod venstre">
+        <h3 class="d-flex">Gå tilbage</h3>
+      </a>
+    </div>
+    <h1 class="mx-auto d-block text-center mt-5 white">Materialesamling kommer!</h1>
+    <p class="copy-txt mx-auto">Her kommer der forhåbentligt en materialesamling - hvis jeg kan nå det...<br>Se prototype nedenfor:
+    </p>
+
+    <img class="W-80 mx-auto d-block" src="img/pruttetype.png" alt="">
+
+  </div>
+
+</main>
+
+
+<!--__________________________________ SCRIPTS _________________________________-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+
+</body>
