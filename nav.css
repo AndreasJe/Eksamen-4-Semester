@@ -406,6 +406,9 @@ footer {
 .divider-gfx1 {
   width: 100%;
   padding: 0;
+  height: 25px;
+  width: 200% !important;
+  margin-left: -72% !important;
 }
 
 #divider {
@@ -428,8 +431,9 @@ footer {
 
 .divider-gfx2 {
   margin-top: -9px;
-  margin-left: -31px !important;
-  width: 100%;
+  height: 25px;
+  width: 200% !important;
+  margin-left: -72% !important;
   padding: 0;
 }
 
@@ -518,7 +522,7 @@ footer {
 .visuel-guide {
   width: 80%;
   left: 10%;
-  top: 38%;
+  top: 45%;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -1056,17 +1060,19 @@ footer h4 {
   }
 
   .divider-gfx1 {
-    width: 110% !important;
+    height: 35px;
+    width: 200% !important;
+    margin-left: -72% !important;
     margin-top: -9px !important;
-    margin-left: -31px !important;
     padding: 0;
     overflow-x: hidden;
   }
 
   .divider-gfx2 {
     margin-top: -32px !important;
-    margin-left: -31px !important;
-    width: 110% !important;
+    margin-left: -72% !important;
+    height: 25px;
+    width: 200% !important;
     padding: 0;
   }
 
@@ -1278,7 +1284,6 @@ footer h4 {
     margin: 75px;
     margin-bottom: 100px;
     text-align: center;
-    width: 60%;
   }
 
   .explain-copy {
@@ -1397,6 +1402,23 @@ footer h4 {
     height: 815px;
   }
 
+  .divider-gfx1 {
+    height: 53px;
+    width: 200% !important;
+    margin-left: -72% !important;
+    margin-top: -9px !important;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .divider-gfx2 {
+    margin-top: -32px !important;
+    margin-left: -72% !important;
+    height: 25px;
+    width: 200% !important;
+    padding: 0;
+  }
+
   .slimshady {
     width: 80% !important;
     margin-right: auto !important;
@@ -1454,22 +1476,21 @@ footer h4 {
 }
 
 @media (min-width: 1502px) {
-  #divider {
-    margin-left: -7% !important;
-    display: block;
+  .divider-gfx1 {
     height: 70px;
-    width: 110%;
-    z-index: 1;
-    margin-bottom: -25px;
+    width: 200% !important;
+    margin-left: -72% !important;
+    margin-top: -9px !important;
+    padding: 0;
+    overflow-x: hidden;
   }
 
-  #divider2 {
-    margin-left: -7% !important;
-    display: block;
-    height: 70px;
-    width: 110%;
-    z-index: 1;
-    margin-top: -50px;
+  .divider-gfx2 {
+    margin-top: -32px !important;
+    margin-left: -72% !important;
+    height: 25px;
+    width: 200% !important;
+    padding: 0;
   }
 
   .fixed-height {
@@ -1482,9 +1503,9 @@ footer h4 {
   }
 
   .visuel-guide {
-    width: 431px;
-    left: 84%;
-    top: 11%;
+    width: 371px;
+    left: 87%;
+    top: 5%;
     margin: 0;
     padding: 0;
     position: absolute;

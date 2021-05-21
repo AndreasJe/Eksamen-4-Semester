@@ -125,7 +125,7 @@ input#username-field {
 }
 
 .back {
-  width: 100vw !important;
+  width: 100% !important;
   margin-top: 25px;
   flex-direction: row;
   display: flex !important;
@@ -133,12 +133,12 @@ input#username-field {
   height: 40px;
 }
 
-.back img {
+.back a img {
   width: 70px;
   margin: 0;
 }
 
-.back h3 {
+.back a h3 {
   height: auto;
   width: 110px;
   text-align: center;
