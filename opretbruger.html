@@ -32,7 +32,7 @@
 
   <style media="screen">
     .bottom-box {
-      height: 18vh !important;
+      height: 30vh !important;
     }
 
     em {
@@ -41,14 +41,47 @@
     }
 
     .divider-gfx-login {
-      height: 100%;
       width: 100%;
       padding: 2rem;
       background-color: #72AE73 !important;
     }
 
+
+    #divider {
+
+      margin-top: -78px;
+    }
+
     #login-header {
       margin-top: 18px;
+    }
+
+    @media (min-width: 750px) {
+
+      #divider {
+
+        margin-top: -92px;
+      }
+    }
+
+
+    @media (min-width: 1200px) {
+
+      #divider {
+
+        margin-top: -92px;
+        margin-left: -50%;
+      }
+
+    }
+
+    @media (min-width: 1500px) {
+      #divider {
+
+        margin-top: -92px;
+        width: 281%;
+        margin-left: -79%;
+      }
     }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -83,6 +116,10 @@
           <h3 class="d-flex">Gå tilbage</h3>
         </a>
       </div>
+
+      <div class="spacer-m hide">
+
+      </div>
       <h1 class="mx-auto d-block text-center mt-5 white">Opret bruger</h1>
 
 
@@ -98,7 +135,7 @@
 
       <div class="container-fluid green bottom-box">
 
-        <div class="container-fluid divider-gfx-login h-100">
+        <div class="container-fluid divider-gfx-login">
           <svg id="divider" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5274.6212 128.1193">
             <defs>
               <style>
@@ -112,7 +149,7 @@
           </svg>
 
 
-          <button class="knap d-block buttonwhite mx-auto" type="button" name="button" onclick="location.href='analyse.html'">Opret Bruger</button>
+          <button class="knap d-block buttonwhite mt-2 mx-auto" type="button" name="button" onclick="location.href='analyse.html'">Opret Bruger</button>
 
         </div>
       </div>

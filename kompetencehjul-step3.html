@@ -370,11 +370,6 @@
 
     }
 
-    .divider-gfx-login {
-      height: 100%;
-      width: 100%;
-    }
-
     #fix {
       margin-bottom: 30px !important;
     }
@@ -382,7 +377,8 @@
 
 
     button {
-      width: 100% !important;
+      width: max-content;
+      padding: 0 20px;
     }
 
     .bottom-box .row .col-6 {
@@ -400,6 +396,10 @@
       width: 100vw;
       margin-left: -9vw !important;
 
+    }
+
+    .divider-gfx-login {
+      background-color: #f4f5f000 !important;
     }
 
     .top-container {
@@ -422,12 +422,18 @@
       position: absolute;
     }
 
-    .divider-gfx-login {
-      background-color: #F4F5F0 !important;
-    }
-
     .competence_form {
       width: 100% !important;
+    }
+
+    #divider {
+      height: 33px;
+      width: 348%;
+      margin-left: -72%;
+      margin-top: -23px;
+      margin-bottom: -40px;
+
+
     }
 
 
@@ -437,9 +443,7 @@
         width: 80% !important;
       }
 
-      #fix {
-        margin-bottom: 0px !important;
-      }
+      #fix {}
 
       .fix2 {
         padding: 0;
@@ -487,19 +491,69 @@
         margin-right: auto;
       }
 
+      #divider {
+        height: 45px;
+        width: 348%;
+        margin-left: -72%;
+        margin-top: -36px;
+        margin-bottom: -40px;
+      }
+
     }
 
+    @media (min-width: 922px) {
+
+      #divider {
+        height: 57px;
+        width: 348%;
+        margin-left: -79%;
+        margin-top: -40px;
+        margin-bottom: -40px;
+      }
+    }
 
     @media (min-width: 1200px) {
-      .top-container {
-        width: 100% !important;
-      }
 
-      .competence_form {
-        width: 55% !important;
+      #divider {
+        margin-left: -42% !important;
+        height: 96px !important;
+        width: 227% !important;
+        margin-top: -60px;
+        margin-bottom: -40px;
       }
     }
-  </style><!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+
+    @media (min-width: 1500px) {
+
+      #divider {
+        margin-left: -99% !important;
+        height: 105px !important;
+        width: 295% !important;
+        margin-top: -73px;
+        margin-bottom: -40px;
+
+      }
+
+
+    }
+
+
+    @media (min-width: 2000px) {
+
+      #divider {
+        margin-left: -99% !important;
+        height: 105px !important;
+        width: 295% !important;
+        margin-top: -73px;
+        margin-bottom: -40px;
+
+      }
+    }
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6Z7TQN0CSP"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -556,10 +610,8 @@
 
           </div>
           <div class="container-fluid">
-            <h3>
-              12. Få eleverne til at danne relationer til hinanden</h3>
-            <p>Læreren skal danne et forpligtende fællesskab i klassen. Derfor skal læreren få eleverne til at samarbejde på kryds og tværs af klassen. Eleverne skal lære at være og arbejde sammen uden lærerens styring. De skal opbygge autonomi, både
-              individuelt og i fællesskab. Læreren skal kunne sætte eleverne i centrum og lade dem tage initiativ. </p>
+            <h3>1. Planlægge og organisere</h3>
+            <p>Denne kategori handler om planlægning på både overordnet set og i detaljen. Det handler om årsplanen, en plan for en periode og for den enkelte lektion.</p>
           </div>
           <div class="spacer-m">
 
@@ -719,17 +771,13 @@
 
           <div class=" mobil-wrap  row w-30 mx-auto d-flex justify-content-between">
             <div class=" container-fluid col-6 p-0 m-0 mx-auto">
-              <button id="fix" class="knap buttongreen d-block mx-auto " type="button" name="button" onclick="location.href='kompetencehjul-step1.html'">Tilbage</button>
-
-
-            </div>
-            <div class=" container-fluid col-6 p-0 m-0 mx-auto">
-              <button id="fix" class="knap buttongreen d-block mx-auto " type="button" name="button" onclick="location.href='kompetencehjulet.html'">Se din analyse</button>
+              <button id="fix" class="knap buttongreen d-block mx-auto " type="button" name="button" onclick="location.href='kompetencehjul-step3.html'">Tilbage</button>
+              <button id="fix" class="knap buttongreen d-block mx-auto " type="button" name="button" onclick="location.href='kompetencehjul-step4.html'">Fortsæt</button>
 
 
             </div>
           </div>
-          <div class="spacer-sm">
+          <div class="spacer-l">
           </div>
 
 

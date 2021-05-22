@@ -6,12 +6,6 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  <title>Analyse med Kompetencehjulet - Din vej til faglig udvikling</title>
-  <link rel="stylesheet" href="login.css">
-  <link rel="stylesheet" href="nav.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
   <!-- Google Tag Manager -->
   <script>
     (function(w, d, s, l, i) {
@@ -30,6 +24,10 @@
     })(window, document, 'script', 'dataLayer', 'GTM-WZ3ZMTT');
   </script>
   <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <title>Kompetencehjulet - Din vej til faglig udvikling</title>
+  <link rel="stylesheet" href="login.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
   <style media="screen">
     /* <!--__________________________________ FONTS _________________________________--> */
@@ -103,42 +101,7 @@
       src: local('Frutiger LT Pro 68 Bold Condensed Italic'), url('font/FrutigerLTProBoldCnIta.woff') format('woff');
     }
 
-    /* <!--__________________________________ AKTIV FONT STYLING _________________________________--> */
-    h1 {
-      font-size: 25px !important;
-      font-family: 'Frutiger LT Pro 65 Bold';
-    }
 
-    h2 {
-      font-family: 'Frutiger LT Pro 67 Bold Condensed' !important;
-      text-align: left;
-      font-size: 30px !important;
-    }
-
-    h3 {
-      font-family: 'Frutiger LT Pro 67 Bold Condensed' !important;
-      font-size: 20px !important;
-      text-align: left;
-    }
-
-    h4 {
-      font-family: 'Frutiger LT Pro 67 Bold Condensed' !important;
-      font-size: 20px !important;
-      text-align: left;
-      line-height: 1.2;
-    }
-
-    h5 {
-      font-family: 'Frutiger LT Pro 45 Light' !important;
-      font-size: 15px !important;
-      line-height: 1.2;
-    }
-
-    h1 span {
-      font-family: 'Frutiger LT Pro 65 Bold';
-      font-size: 20px !important;
-      display: block;
-    }
 
     p {
       font-family: 'Frutiger LT Pro 45 Light' !important;
@@ -166,47 +129,6 @@
       font-size: 20px !important;
       font-weight: 500;
     }
-
-    body,
-    html {
-      scroll-behavior: smooth !important;
-      box-shadow: 0px 0px 16px #888888;
-      background-color: #f4f5f0 !important;
-      font-size: 20px;
-      overflow-y: hidden;
-      overflow-x: hidden;
-      height: 100%;
-      width: 100%;
-      padding: 0;
-      margin: auto;
-    }
-
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth !important;
-    }
-
-    #nav-main {
-      height: 100%;
-      position: relative;
-      overflow-y: hidden;
-      overflow-x: hidden;
-    }
-
-    #content {
-      overflow-x: hidden;
-      height: 100%;
-      position: relative;
-      overflow: scroll;
-      overflow-x: hidden;
-      background-color: #F4F5F0;
-      scroll-behavior: smooth;
-    }
-
-    ::-webkit-scrollbar {
-      display: none;
-    }
-
 
     .spacer-xl {
       height: 150px;
@@ -287,7 +209,6 @@
 
     .competence_form label>input:checked+svg text.comp_level_text {
       fill: #F4F5F0;
-      FFF;
     }
 
     .value_competence {
@@ -341,7 +262,7 @@
     em {
       height: 40px;
       color: #72AE73;
-      margin-top: 40px;
+      margin-bottom: 40px;
     }
 
 
@@ -373,6 +294,11 @@
 
     }
 
+    .divider-gfx-login {
+      height: auto;
+      width: 100%;
+    }
+
     #fix {
       margin-bottom: 30px !important;
     }
@@ -380,7 +306,8 @@
 
 
     button {
-      width: 100% !important;
+      width: max-content;
+      padding: 0 20px;
     }
 
     .bottom-box .row .col-6 {
@@ -401,7 +328,8 @@
     }
 
     .top-container {
-      height: 28vh !important;
+      height: 30vh;
+      ;
       position: absolute;
       top: 0;
       left: 0;
@@ -414,40 +342,39 @@
 
 
     .bottom-box {
-      top: 28vh;
+      top: 26vh;
       background-color: #F4F5F0 !important;
       z-index: 3;
       position: absolute;
     }
 
+    .divider-gfx-login {
+      background-color: #F4F5F0 !important;
+    }
 
     .competence_form {
       width: 100% !important;
     }
 
     #divider {
-      height: 113px;
+      margin-left: -18% !important;
+      display: block !important;
+      height: 149px !important;
+      width: 122% !important;
+      margin-bottom: -100px;
 
     }
-
-    .top-container h1 {
-      font-size: 40px !important;
-    }
-
-    .top-container h2 {
-      font-size: 30px !important;
-      font-family: 'Frutiger LT Pro 47 Light Condensed' !important;
-    }
-
 
 
     @media (min-width: 750px) {
       .competence_form {
-        width: 80% !important;
+        width: 80%;
       }
 
       #divider {
-        height: 131px !important;
+        margin-left: -12% !important;
+        height: 137px !important;
+        width: 136% !important;
       }
 
       #fix {
@@ -473,21 +400,17 @@
       }
 
       button {
-        width: 200px !important;
+        width: 250px !important;
       }
 
       h1 {
         font-size: 50px !important;
-      }
-
-
-      .top-container h1 {
-        font-size: 70px !important;
-      }
-
-      .top-container h2 {
-        font-size: 40px !important;
         font-family: 'Frutiger LT Pro 47 Light Condensed' !important;
+      }
+
+      h2 {
+        font-size: 40px !important;
+        font-family: 'Frutiger LT Pro 67 Bold Condensed';
       }
 
       .mobil-wrap {
@@ -508,61 +431,110 @@
     }
 
 
-
-
     @media (min-width: 922px) {
-
-      #divider {
-        margin-left: -37% !important;
-        height: 127px !important;
-        width: 168% !important;
-      }
-    }
-
-    @media (min-width: 1200px) {
       .top-container {
         width: 100% !important;
       }
 
-      .competence_form {
-        width: 55% !important;
+      #divider {
+        margin-left: -51% !important;
+        height: 88px !important;
+        width: 195% !important;
+      }
+
+      img {
+        width: 100%;
+        margin-top: -80px;
+      }
+
+      .bottom-box .row .col-6 {
+        width: 39% !important;
+
+      }
+
+    }
+
+    @media (min-width: 1200px) {
+      .bottom-box .row .col-6 {
+        width: 45% !important;
+
       }
 
 
       #divider {
-        margin-left: -37% !important;
-        height: 117px !important;
-        width: 168% !important;
+        margin-left: -44% !important;
+        height: 87px !important;
+      }
+
+
+      img {
+        width: 73%;
+
+        margin-top: -60px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+
+      h1 {
+
+        font-size: 90px !important;
+      }
+
+      h2 {
+        font-size: 44px !important;
+        margin-bottom: -10px
+      }
+
+      .top-container {
+        height: 30vh;
+      }
+
+      .bottom-box {
+        top: 30vh;
+      }
+
+    }
+
+    @media (min-width: 922px) {
+
+      #divider {
+        margin-left: 88% !important;
+        height: 48px !important;
+        width: 173% !important;
       }
 
 
     }
 
-
-
-    @media (min-width: 1500px) {
+    @media (min-width: 1200px) {
 
       #divider {
-        margin-left: -37% !important;
-        height: 117px !important;
-        width: 168% !important;
+        margin-left: 72% !important;
+        height: 71px !important;
+        width: 195% !important;
       }
 
 
     }
-
 
     @media (min-width: 2000px) {
 
       #divider {
-        margin-left: -37% !important;
-        height: 117px !important;
-        width: 168% !important;
+        margin-left: 72% !important;
+        height: 88px !important;
+        width: 209% !important;
       }
 
+      img {
+        width: 73%;
+
+        margin-top: -100px;
+      }
 
     }
   </style>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6Z7TQN0CSP"></script>
   <script>
@@ -589,173 +561,80 @@
       <div class="container-fluid top-container green">
         <div class="spacer-m  ">
         </div>
-        <h2 class="mx-auto d-block text-center mt-3">Første gang med</h2>
+        <h2 class="mx-auto d-block text-center mt-3">Din vurdering med</h2>
         <h1 class="mx-auto d-block text-center mb-3">Kompetencehjulet</h1>
         <div class="spacer-m  hide2">
+          <div class="spacer-l hide">
+
+          </div>
         </div>
-        <div class="spacer-l hide">
-
-        </div>
 
 
 
+      </div>
 
 
-        <div class="container-fluid white bottom-box"> <svg id="divider" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5274.6212 128.1193">
+      <div class="container-fluid white bottom-box">
+
+        <div class="container-fluid mx-auto  "><svg id="divider" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5274.6212 128.1193">
             <defs>
               <style>
                 .cls-1 {
-                  fill: #F4F5F0;
+                  fill: #f4f5f0;
                 }
               </style>
             </defs>
             <path class="cls-1"
               d="M5274.6212,65.8056c-55.18,4.06-85.3308,12.813-178.5858,29.2862-120.2528,21.2422-357.9411-3.2588-400.2644-7.9268-141.1123-15.5644-467.1927-35.6172-1118.13-21.1377-544.2322,12.106-764.5839,36.0693-1566.2521,6.606-149.7081-5.502-95.6929-7.438-326.3028-11.89C317.0683,34.331,437.1581,122.8774,0,81.36v46.7593H5274.6212Z" />
           </svg>
+        </div>
+        <div class="spacer-l">
+
+        </div>
 
 
-          <div class="container-fluid mx-auto  divider-gfx-login h-100">
+        <div class="container-fluid" style="max-width: 1440px;">
 
+          <div class=" row d-flex justify-content-center">
+            <div class="col-6">
 
-            <div class="spacer-m hide2">
-
+              <h3>
+                Dit kompetencehjul:</h3>
+              <p>Nu er færdig med vurderer dig selv, og vi har nu den data vi skal bruge. Til højre kan du se dit udfyldte kompetencehjul.<br> Klik på "Vis anbefalet materiale" nedenfor, og du vil blive guidet igennem indholdet på platformen.
+              </p>
             </div>
-            <h2 class=" copy d-block mx-auto pb-4 p-0">Sådan bruger du Kompetencehjulet: </h2>
-            <p class=" copy d-block mx-auto">
-              Tag udgangspunkt i din generelle opfattelse af dig selv som lærer eller skolepædagog, når du udfylder modellen. Vurdér dig selv på skalaen 1-5. 1 er den laveste bedømmelse, du kan give dig selv. 5 er den højeste.
-              <br><br>
-              Klik på det tal, der passer bedst til din vurdering af dig selv.
-              <br><br>
-              Ønsker du at få en længere forklaring omkring Kompetencehjulets kvaliteter og hvordan de skal forståes, kan du finde en podcast og en video nedenfor.
-            </p>
-            <div class=" container-fluid d-flex flex-column responss" style="padding: 1rem;">
-              <a class=" d-flex flex-row align-items-baseline justify-content-center" href="#">
-                <h3>Hør Podcast:</h3>
-                <em>"Kompetencehjulet"</em>
-              </a>
-              <a class=" d-flex flex-row align-items-baseline justify-content-center" href="#">
-
-                <h3>Se Podcast:</h3>
-                <em>"En kort introduktion til Kompetencehjulet"</em>
-              </a>
+            <div class="col-6">
+              <img class="d-block mx-auto" src="ico/kompetencehjul-complete.svg" alt="kompetencehjulet udfyldt">
             </div>
+          </div>
+          <em class="text-center mx-auto d-block">* Du kan altid gå tilbage og rette i din analyse senere</em>
 
-            <div class=" mobil-wrap  row w-30 mx-auto d-flex justify-content-between">
-              <div class=" container-fluid col-6 p-0 m-0 mx-auto">
-                <button id="fix" class="knap buttongreen d-block mx-auto " type="button" name="button" onclick="location.href='kompetencehjul-step1.html'">Start din analyse</button>
+          <div class="spacer-m">
+          </div>
+        </div>
 
 
-              </div>
-            </div>
-            <div class="spacer-sm">
-            </div>
-            <div class="  container mb-5 pb-5  row  mx-auto d-block ">
-              <a class=" d-block text-center" href="índex.html"> <em>Vent med analysen, og gå direkte til forsiden</em></a>
-            </div>
+        <div class=" mobil-wrap  row w-30 mx-auto d-flex justify-content-between">
+          <div class=" container-fluid col-6 p-0 m-0 mx-auto">
+            <button id="fix" class="knap buttongreen d-block mx-auto " type="button" name="button" onclick="location.href='kompetencer.html'">Vis Anbefalet indhold</button>
 
-            <div class="spacer-m">
-            </div>
 
           </div>
         </div>
+        <div class="spacer-sm">
+        </div>
+
+
       </div>
     </div>
-    <!--__________________________________ NAVIGATION _________________________________-->
 
 
-    <input type="checkbox" id="myInput">
-    <svg class="bobbel" height="100" width="100">
-      <circle cx="200" cy="200" r="200" stroke="#F4F5F0" stroke-width="5" fill="#72AE73" />
-    </svg>
-    <label for="myInput">
-      <span class="bar top"></span>
-      <span class="bar middle"></span>
-      <span class="bar bottom"></span>
-    </label>
-    <aside>
-      <div class="aside-section aside-left">
-        <img src="user.jpg" class="d-flex rounded-circle mx-auto userpic" alt="penis">
-        <p class="brugernavn p-3 pb-0">Peter Svendsen</p>
-        <p class="skole p-3 pt-1">Højby Lilleskole</p>
-
-        <svg class="d-flex mx-auto" height="5" width="50">
-          <svg height="10" width="100">
-            <line x1="0" y1="0" x2="100" y2="0" style="stroke:#F4F5F0;stroke-width:3" />
-          </svg>
-          <div class="container w-75 ">
-
-            <h3 class="green mt-3" style="margin-left:10px;margin-bottom:-10px;">Dine kvalifikationer:</h3>
-
-          </div>
-          <div class="row qualities p-2 m-0 ">
-            <div class="col-6 mx-auto p-3 pb-0">
-
-              <img src="ico/kat5_ikon.svg" alt="Kategori 5 – Starte og slutte stærkt">
-              <h3>Kategori 5:<br>Starte og slutte stærkt</h3>
-            </div>
-            <div class="col-6 mx-auto p-3 pb-0">
-              <img src=" ico/kat6_ikon.svg" alt="Kategori 6 – Motivere og skabe mening">
-              <h3>Kategori 6:<br>Motivere og skabe mening</h3>
-            </div>
-            <div class="col-6 mx-auto p-3 pt-0">
-              <img src=" ico/kat10_ikon.svg" alt="Kategori 11: Danne relationer til hver enkelt elev">
-              <h3>Kategori 11:<br>Danne relationer til hver enkelt elev</h3>
-            </div>
-            <div class="col-6 mx-auto p-3 pt-0">
-              <img src=" ico/kat12_ikon.svg" alt="Kategori 12: Få eleverne til at danne relationer til hinanden">
-              <h3>Kategori 12:<br>Få eleverne til at danne relationer til hinanden</h3>
-            </div>
-
-          </div>
-
-
-          <div class="aside-content">
-            <div class="container d-flex justify-content-between">
-              <button class="button buttonwhite" onclick="location.href='indstilligner.html';"> Indstillinger </button>
-              <button class="button buttonwhite" onclick="location.href='login_oversigt.html';"> Logud </button>
-            </div>
-          </div>
-      </div>
-      <div class="aside-section aside-right">
-        <div class="container-fluid pt-5" id="usermobile">
-
-          <div class="wrapper-brugerui">
-
-            <div class="container">
-              <img src="user.jpg" class="d-flex rounded-circle mx-auto userpic" alt="penis">
-            </div>
-            <div class="container">
-              <p class="brugernavn">Peter Svendsen</p><svg class="d-block mx-auto" height="5" width="50">
-                <line x1="0" y1="0" x2="100" y2="0" style="stroke:#F4F5F0;stroke-width:3" />
-              </svg>
-              <p class="skole">Højby Lilleskole</p>
-
-
-            </div>
-
-          </div>
-          <div class="container  d-flex p-3 mt-3 justify-content-between">
-            <button class="button buttonwhite" onclick="location.href='indstilligner.html';"> Indstillinger </button>
-            <button class="button buttonwhite" onclick="location.href='login_oversigt.html';"> Logud </button>
-          </div>
-        </div>
-        <ul class="aside-list">
-          <li><a href="index.html" class="aside-anchor">Forside</a></li>
-          <li><a href="analyse.html" class="aside-anchor">Din Analyse</a></li>
-          <li><a href="kompetencer.html" class="aside-anchor">Anbefalet indhold</a></li>
-          <li><a href="materialesamling.html" class="aside-anchor">Materialesamling</a></li>
-        </ul>
-      </div>
-    </aside>
-
-    <!--__________________________________ NAVIGATION SLUT _________________________________-->
   </main>
 
 
   <!--__________________________________ SCRIPTS _________________________________-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-
 
 </body>
 
