@@ -33,13 +33,156 @@
       margin-right: auto;
       margin-left: auto;
       max-width: 2000px;
+      box-shadow: none;
       padding: 0 !important;
-      margin: 0 !important;
 
     }
 
-    img {
-      max-width: 100%;
+    /* <!--__________________________________ Article _________________________________--> */
+
+
+    .articlecontainer {
+      border: 6px solid #72AE73;
+      box-shadow: 5px 9px 6px #00000016;
+    }
+
+    .HeaderBox {
+      padding: 1rem;
+      background-color: #72AE73;
+      color: #F4F5F0;
+    }
+
+
+
+    /* <!--__________________________________ Article - Content _________________________________--> */
+
+    .articlecontent {
+      background-color: #FFFF;
+    }
+
+    .articlecontent img {
+      height: 480px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      object-fit: cover;
+      object-position: 50% 32%;
+    }
+
+    .articlecontent p {
+      padding-left: 5rem !important;
+      padding-right: 5rem !important;
+      padding: 1rem;
+      font-size: 18px !important;
+    }
+
+    .articlecontent h2 {
+      padding-left: 5rem !important;
+      padding-right: 5rem !important;
+      font-size: 20px !important;
+    }
+
+    .articlecontent h1 {
+      padding-left: 5rem !important;
+      padding-right: 5rem !important;
+      padding: 1rem;
+    }
+
+    /* <!--__________________________________ Sidebar - description _________________________________--> */
+
+
+
+    .description-box {
+      background-color: #72AE73;
+      color: #F4F5F0;
+
+    }
+
+    .description-box .forfatter {
+      height: 180px;
+      width: 180px;
+      object-fit: cover;
+      border: 1px solid #f4f5f0;
+    }
+
+
+    .description-box p {
+      font-size: 15px !important;
+      margin-bottom: 0.5rem;
+      margin-top: 0.5rem;
+      font-family: 'Frutiger LT Pro 47 Light Condensed';
+    }
+
+    .description-box h2 {
+      font-family: 'Frutiger LT Pro 57 Condensed';
+      font-size: 15px !important;
+      margin-bottom: 0.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .description-box h1 {
+      font-family: 'Frutiger LT Pro 65 Bold';
+      font-size: 15px !important;
+    }
+
+    .bottom-line {
+      height: fit-content;
+      border-bottom: 1px solid #f4f5f0ab;
+
+    }
+
+    .ikon-knap {
+      margin-top: -0.2rem;
+      height: 50px !important;
+      width: fit-content !important;
+    }
+
+
+    .gap {
+      margin-top: 20px !important
+    }
+
+    .gap2 {
+      margin-top: 0px !important
+    }
+
+    .gap3 {
+      margin-top: 20px !important
+    }
+
+
+    @media (min-width: 1200px) {
+
+      /*Gap imellem sektioner på sidena */
+      .gap {
+        margin-top: 20px !important
+      }
+
+      .gap2 {
+        margin-top: 20px !important
+      }
+
+      .gap3 {
+        margin-top: 0px !important
+      }
+
+      .description-box .forfatter {
+        height: 130px;
+        width: 130px;
+        object-fit: cover;
+        border: 1px solid #f4f5f0;
+      }
+
+      .flex-fix {
+        flex-wrap: wrap !important;
+      }
+
+      .ikon-knap {
+        margin-top: -0.2rem;
+        height: 100% !important;
+        width: fit-content !important;
+      }
+
     }
   </style>
 
@@ -68,40 +211,66 @@
     <div id="content">
 
       <div class="row  p-1 d-flex justify-content-center">
-        <div class="col-12 col-lg-8 m-2">
-          <div class="article m-3">
+        <!--__________________________________ Wrapper til venstre sidebar _________________________________-->
+        <div class="col-12 col-xl-8">
+          <!--__________________________________ Artikelcontainer _________________________________-->
+          <div class="articlecontainer ">
+
+
+
+            <!--__________________________________ ArtikelCOntent:  Overskrift _________________________________-->
             <div class="HeaderBox align-top">
               <h1> Introtekst: Planlægge og organisere </h3>
                 <h3>Side: 1/5</h3>
             </div>
+            <!--__________________________________ ArtikelCOntent:  Indhold _________________________________-->
+            <div class="articlecontent align-baseline ">
+              <div class="spacer-m">
 
-            <img src="user.jpg" alt="Forfatter">
-          </div>
+              </div>
+              <h1>Relationer</h1>
+              <p>Maecenas interdum ultrices felis tristique auctor. Sed congue, dui non suscipit pellentesque, ex ligula auctor mauris, a viverra libero felis sed elit. In vehicula, augue mattis ultrices lobortis, velit enim bibendum augue, commodo
+                volutpat quam nunc quis est. Duis rhoncus turpis ut neque accumsan, eget consequat sapien malesuada. Donec eget facilisis libero. Maecenas in metus laoreet, porta urna at, sodales nisi. Nunc ornare sem vel iaculis fermentum. Cras
+                convallis quam id aliquet sodales. Proin ultricies vel velit ut consequat. Quisque aliquam bibendum lacus nec aliquet.
 
-          <div class="container align-baseline ">
+                Quisque id leo sed enim fermentum pulvinar. Donec interdum dolor hendrerit dui commodo, ac hendrerit lacus posuere. Donec commodo, purus a consectetur sodales, arcu dui hendrerit mauris, a ornare purus lectus nec ipsum. Etiam eu
+                sapien ut tellus dictum sagittis vel in ex. Praesent eget lorem ut dui aliquam gravida. Nam varius feugiat neque, ut rutrum purus pulvinar non. Proin dapibus ante at sapien porta elementum. Nam non finibus nibh. Quisque aliquet eros
+                tellus, sit amet faucibus metus convallis at.</p>
 
+              <img class=" d-block mx-auto" src="img/relationer.jpg" alt="Illustrerende billede til artikel">
+              <h2>Curabitur eu ornare nisi:</h2>
+              <p> Fusce condimentum diam vel mauris porta vulputate. Aenean lacinia, nisl eget efficitur fringilla, ex metus gravida quam, eget dapibus felis leo vel elit. Duis consectetur lacus et malesuada facilisis. Curabitur pellentesque neque
+                elit, non tincidunt elit venenatis nec. Duis quis cursus nisi. In purus erat, pharetra eget tellus nec, dictum volutpat nunc. Nam accumsan mattis risus, et elementum magna tincidunt in. Class aptent taciti sociosqu ad litora torquent
+                per conubia nostra, per inceptos himenaeos.
+              </p>
+            </div>
 
           </div>
 
         </div>
 
-        <div class="col-12 col-lg-2 m-3  align-top">
+        <!--__________________________________ wrapper til sidebar _________________________________-->
+        <div class="col-12 col-xl-2   align-top">
 
-          <div class="row ">
-            <div class="col-6 col-lg-12 p-0 m-1 container-fluid">
-              <img src="user.jpg" alt="Forfatter">
-              <div class="container  p-0 m-0">
-                <div class="container p-0 m-0 d-flex flex-row">
+          <!--__________________________________ wrapper til de to kollonner _________________________________-->
+          <div class="row gap3 g-0">
+
+
+            <!--__________________________________ SideBar Kollonne _________________________________-->
+            <div class="col-6 col-xl-12 p-3  description-box">
+              <img class=" mx-auto d-block forfatter rounded-circle" src="img/myding.jpg" alt="Forfatter">
+              <div class="container pt-4 p-0 m-0">
+                <div class="container p-0 m-0 d-flex flex-row flex-fix">
                   <h2>Forfatter:</h2>
-                  <p>ASSDAD</p>
+                  <p>&nbsp;Kasper Myding</p>
                 </div>
-                <div class="container p-0 m-0 d-flex flex-row">
+                <div class="container p-0 m-0 d-flex flex-row flex-fix">
                   <h2>Udgivet:</h2>
-                  <p>26 Okt, 2020.</p>
+                  <p>&nbsp;26 Okt, 2020.</p>
                 </div>
-                <div class="container p-0 m-0 d-flex flex-row">
+                <div class="container p-0 m-0 d-flex flex-row flex-fix">
                   <h2>Opdateret:</h2>
-                  <p>23 Nov, 2020.</p>
+                  <p>&nbsp;23 Nov, 2020.</p>
                 </div>
 
               </div>
@@ -111,10 +280,11 @@
                 <p>Her står der en helt masse om Kasper,</p>
               </div>
 
-
-
             </div>
-            <div class="col-6 col-lg-12 p-0 m-1 container-fluid">
+
+
+            <!--__________________________________ SideBar Kollonne _________________________________-->
+            <div class="col-6 col-xl-12 p-3 m-0 gap2 description-box">
               <div class="container p-0 m-0 ">
                 <h2>Beskrivelse:</h2>
                 <p>Du har en helt særlig rolle som den ubetingede leder af klassen. Du er den, der sammen med eleverne, skaber et godt klassemiljø og får klassen til at trives og lære. Din relationen til eleverne er asymmetrisk af flere årsager: Du
@@ -127,6 +297,82 @@
             </div>
 
           </div>
+          <div class="col-12 p-3 m-0 gap description-box">
+            <div class="container p-0 m-0 ">
+              <h2>Ressourcer i dette forløb:</h2>
+              <div class="container pt-4 p-0 m-0">
+                <div class="container p-0 m-0 d-flex flex-row bottom-line">
+                  <h2>1:</h2>
+                  <p>&nbsp;Konkrete tips til hver lærerrolle</p>
+                </div>
+                <div class="container p-0 m-0 d-flex flex-row bottom-line">
+                  <h2>2:</h2>
+                  <p>&nbsp;Konkrete tips til skarpe spørgsmål</p>
+                </div>
+                <div class="container p-0 m-0 d-flex flex-row bottom-line">
+                  <h2>3:</h2>
+                  <p>&nbsp;Seks konkrete tilgange</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-12 p-3 m-0 gap description-box">
+
+
+
+
+            <div class="row p-0 m-0 g-0">
+
+
+
+              <div class="col-9 container p-0 m-0 d-flex flex-row">
+                <h3>Gem som favorit</h3>
+              </div>
+
+
+              <div class="col-3 container p-0 m-0 d-flex flex-row">
+                <img class="ikon-knap" src="ico/favorite.svg" alt="">
+              </div>
+
+
+
+
+            </div>
+
+          </div>
+          <div class="col-12 p-3 m-0 gap description-box">
+
+
+
+
+            <div class="row p-0 m-0 g-0">
+
+
+
+              <div class="col-9 container p-0 m-0 d-flex flex-row">
+                <h3>Send os din feedback</h3>
+              </div>
+
+
+              <div class="col-3 container p-0 m-0 d-flex flex-row ">
+                <img class="ikon-knap" src="ico/feedback.svg" alt="">
+              </div>
+
+
+
+
+            </div>
+
+          </div>
+
+
+
+
+
         </div>
       </div>
 
@@ -148,7 +394,6 @@
           Esthersvej 14<br> 2900 Hellerup</h4>
       </div>
     </footer>
-    </div>
     <!--__________________________________ NAVIGATION _________________________________-->
 
 
@@ -163,7 +408,7 @@
     </label>
     <aside>
       <div class="aside-section aside-left">
-        <img src="user.jpg" class="d-flex rounded-circle mx-auto userpic" alt="penis">
+        <img src="user.jpg" class="d-flex userpic rounded-circle mx-auto" alt="penis">
         <p class="brugernavn p-3 pb-0">Peter Svendsen</p>
         <p class="skole p-3 pt-1">Højby Lilleskole</p>
 
