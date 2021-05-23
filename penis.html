@@ -28,15 +28,16 @@
   <title>Kategori 1: Formål og noget andet</title>
   <link rel="stylesheet" href="nav.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
   <style media="screen">
     body {
       margin-right: auto;
       margin-left: auto;
       max-width: 2000px;
       box-shadow: none;
-      padding: 0 !important;
 
     }
+
 
     /* <!--__________________________________ Article _________________________________--> */
 
@@ -44,6 +45,7 @@
     .articlecontainer {
       border: 6px solid #72AE73;
       box-shadow: 5px 9px 6px #00000016;
+      margin-top: 30px;
     }
 
     .HeaderBox {
@@ -52,40 +54,108 @@
       color: #F4F5F0;
     }
 
+    .article-nav .col-6 a {
+      margin: 0;
+      padding: 10px 30px;
+      background-color: #72AE73;
+      color: #F4F5F0;
+      text-decoration: none;
+    }
+
 
 
     /* <!--__________________________________ Article - Content _________________________________--> */
 
     .articlecontent {
-      background-color: #FFFF;
+      background-color: #f9fafb;
+      color: #00000;
     }
 
-    .articlecontent img {
+
+    .articlecontent .img-model {
+      width: 90%;
+    }
+
+    .articlecontent .img-full-width {
       height: 480px;
       width: 100%;
       margin: 0;
       padding: 0;
       object-fit: cover;
       object-position: 50% 32%;
+      margin-top: 4rem !important;
+      margin-bottom: 4rem !important;
     }
 
     .articlecontent p {
-      padding-left: 5rem !important;
-      padding-right: 5rem !important;
+      padding-left: 2rem !important;
+      padding-right: 2rem !important;
       padding: 1rem;
-      font-size: 18px !important;
+      font-size: 1rem !important;
+
     }
 
     .articlecontent h2 {
-      padding-left: 5rem !important;
-      padding-right: 5rem !important;
-      font-size: 20px !important;
+      padding-left: 2rem !important;
+      padding-right: 2rem !important;
+      padding-top: 2rem !important;
+      font-size: 1.5rem !important;
     }
 
     .articlecontent h1 {
-      padding-left: 5rem !important;
-      padding-right: 5rem !important;
+      padding-left: 2rem !important;
+      padding-right: 2rem !important;
       padding: 1rem;
+      font-size: 2.5rem !important;
+    }
+
+    .liste {
+
+      list-style-type: circle;
+      padding-left: 3rem !important;
+      padding-right: 3rem !important;
+    }
+
+    #article-quote p {
+      padding-bottom: 0;
+      font-size: 2rem !important;
+
+      font-family: 'Frutiger LT Pro 45 Light';
+    }
+
+    #article-quote {
+      padding-top: 2rem;
+    }
+
+
+    .articlecontent h3 {
+      padding: 2rem !important;
+      padding-top: 0 !important;
+      font-size: 0.8rem !important;
+    }
+
+    .ul {
+      position: static;
+      z-index: 100;
+    }
+
+    .article-divider {
+      width: 70%;
+      padding-top: 5rem;
+      padding-bottom: 1rem;
+
+    }
+
+    .reference {
+      padding: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    .kilde {
+      font-size: 15px !important;
+      text-align: left;
+      width: 100% !important;
+      height: 70px;
     }
 
     /* <!--__________________________________ Sidebar - description _________________________________--> */
@@ -118,16 +188,19 @@
       font-size: 15px !important;
       margin-bottom: 0.2rem;
       margin-top: 0.5rem;
+      font-family: 'Frutiger LT Pro 65 Bold' !important;
     }
 
     .description-box h1 {
       font-family: 'Frutiger LT Pro 65 Bold';
       font-size: 15px !important;
+      font-family: 'Frutiger LT Pro 67 Bold Condensed';
     }
 
     .bottom-line {
       height: fit-content;
       border-bottom: 1px solid #f4f5f0ab;
+      cursor: pointer;
 
     }
 
@@ -143,13 +216,67 @@
     }
 
     .gap2 {
-      margin-top: 0px !important
+      margin-top: 0px !important;
     }
 
     .gap3 {
       margin-top: 20px !important
     }
 
+
+
+
+
+
+    @media (min-width: 760px) {
+
+      #article-quote p {
+
+        font-size: 2.1rem !important;
+      }
+
+      .articlecontent p {
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+        padding: 1rem;
+        font-size: 18px !important;
+      }
+
+      .articlecontent h3 {
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+        font-size: 20px !important;
+      }
+
+      .articlecontent h2 {
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+        font-size: 20px !important;
+      }
+
+      .articlecontent h1 {
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+        padding: 1rem;
+      }
+
+      .liste {
+
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+      }
+
+      .gap2 {
+        margin-top: 0px !important;
+        border-left: 10px solid #f4f5f0;
+      }
+
+      .kilde {
+
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+    }
 
     @media (min-width: 1200px) {
 
@@ -159,7 +286,8 @@
       }
 
       .gap2 {
-        margin-top: 20px !important
+        margin-top: 20px !important;
+        border-left: 0px solid #f4f5f0;
       }
 
       .gap3 {
@@ -181,6 +309,45 @@
         margin-top: -0.2rem;
         height: 100% !important;
         width: fit-content !important;
+      }
+
+      .articlecontainer {
+
+        margin-top: 0px;
+      }
+
+      #article-quote p {
+        font-size: 45px !important;
+      }
+
+      .articlecontent h2 {
+        padding-left: 8rem !important;
+        padding-right: 8rem !important;
+
+        font-size: 35px !important;
+      }
+
+      .articlecontent h3 {
+        padding-left: 8rem !important;
+        padding-right: 8rem !important;
+
+        font-size: 25px !important;
+      }
+
+      .articlecontent p {
+        padding-left: 8rem !important;
+        padding-right: 8rem !important;
+
+        font-size: 20px !important;
+      }
+
+      .articlecontent .img-model {
+        width: 80%;
+      }
+
+      .liste {
+        padding-left: 7rem !important;
+        padding-right: 5rem !important;
       }
 
     }
@@ -220,31 +387,101 @@
 
             <!--__________________________________ ArtikelCOntent:  Overskrift _________________________________-->
             <div class="HeaderBox align-top">
-              <h1> Introtekst: Planlægge og organisere </h3>
-                <h3>Side: 1/5</h3>
+              <h1> Introtekst: Planlægge og organisere </h1>
+              <h3>Side: 1/5</h3>
             </div>
             <!--__________________________________ ArtikelCOntent:  Indhold _________________________________-->
             <div class="articlecontent align-baseline ">
-              <div class="spacer-m">
+              <div id="article-quote">
+                <p>”Intet andet kendetegn på god undervisning har stærkere indflydelse på en vellykket læring for eleverne end en klar strukturering af undervisningen.”
+                </p>
+                <h3>-&nbsp;Hilbert Meyer <sup>[2]</sup></h3>
+
 
               </div>
-              <h1>Relationer</h1>
-              <p>Maecenas interdum ultrices felis tristique auctor. Sed congue, dui non suscipit pellentesque, ex ligula auctor mauris, a viverra libero felis sed elit. In vehicula, augue mattis ultrices lobortis, velit enim bibendum augue, commodo
-                volutpat quam nunc quis est. Duis rhoncus turpis ut neque accumsan, eget consequat sapien malesuada. Donec eget facilisis libero. Maecenas in metus laoreet, porta urna at, sodales nisi. Nunc ornare sem vel iaculis fermentum. Cras
-                convallis quam id aliquet sodales. Proin ultricies vel velit ut consequat. Quisque aliquam bibendum lacus nec aliquet.
+              <h2> Hvor detaljeret skal planen være? </h2>
+              <p>Der findes mange former for planer: Lektionsplaner, dagsplaner, ugeplaner, månedsplaner, årsplaner, etc. De fleste lærere er forpligtede til at lave både ugeplaner og årsplaner, men det kan være forskelligt hvilket
+                detaljeringsniveau, den enkelte lærer arbejder på.</p>
+              <h2>Hvad siger lærerne og forskerne?</h2>
+              <p> Både lærere og forskere er enige om vigtigheden af en god plan. Den tyske didaktiker Hilbert Meyer, fremhæver også vigtigheden af en god plan.
+                <br><br>Den gør, at eleverne:</p>
+              <div class="liste">
 
-                Quisque id leo sed enim fermentum pulvinar. Donec interdum dolor hendrerit dui commodo, ac hendrerit lacus posuere. Donec commodo, purus a consectetur sodales, arcu dui hendrerit mauris, a ornare purus lectus nec ipsum. Etiam eu
-                sapien ut tellus dictum sagittis vel in ex. Praesent eget lorem ut dui aliquam gravida. Nam varius feugiat neque, ut rutrum purus pulvinar non. Proin dapibus ante at sapien porta elementum. Nam non finibus nibh. Quisque aliquet eros
-                tellus, sit amet faucibus metus convallis at.</p>
+                <ul>
+                  <li>Forstår hensigten med undervisningen.
+                  </li>
+                  <li>Oplever, at der er en rød tråd i undervisningens indhold.
+                  </li>
+                  <li>Forstår det faglige og sociale indhold.
+                  </li>
+                  <li>Føler sig trygge og kan overholde de regler og aftaler, der er lavet.
+                  </li>
+                  <li>Undlader at forstyrre hinanden. </li>
+                </ul>
+              </div>
 
-              <img class=" d-block mx-auto" src="img/relationer.jpg" alt="Illustrerende billede til artikel">
-              <h2>Curabitur eu ornare nisi:</h2>
-              <p> Fusce condimentum diam vel mauris porta vulputate. Aenean lacinia, nisl eget efficitur fringilla, ex metus gravida quam, eget dapibus felis leo vel elit. Duis consectetur lacus et malesuada facilisis. Curabitur pellentesque neque
-                elit, non tincidunt elit venenatis nec. Duis quis cursus nisi. In purus erat, pharetra eget tellus nec, dictum volutpat nunc. Nam accumsan mattis risus, et elementum magna tincidunt in. Class aptent taciti sociosqu ad litora torquent
-                per conubia nostra, per inceptos himenaeos.
+              <img class=" img-full-width d-block mx-auto" src="img/relationer.jpg" alt="Illustrerende billede til artikel">
+
+              <h2>Hvordan gør man så i praksis?</h2>
+              <p> Planlægning skal gerne være en god investering. Noget som kommer flerfoldigt tilbage, fordi du har gjort dig overvejelser, som sætter dig i stand til at handle mere velovervejet, frit og fleksibelt i selve
+                undervisningssituationen.<br><br>Der findes ikke et facit på, hvordan en plan skal udarbejdes. Vores erfaringer peger dog i retning af, at det kan være en hjælp at have en skabelon at støtte sig til. Det skaber refleksion og giver
+                træning i at finde ens egen måde at planlægge undervisning på. </p>
+              <h2> Tjek din plan med Kompetencehjulet </h2>
+              <p>Du kan bruge Kompetencehjulet til at kvalitetssikre en plan, du allerede har lavet.
               </p>
+              <img class=" img-model d-block mx-auto" src="img/kompetencehjulet.svg" alt="Illustrerende billede til artikel">
+              <h2> Planlægningsmodellen - de seks faktorer i en god plan</h2>
+              <p>Vores planlægningsmodel tager udgangspunkt i Hilde Hiim og Else Hippes udgave af den didaktiske relationsmodel <sup>[2]</sup>. Planlægningsmodellen er ligeledes relationel, fordi den rummer seks forskellige områder, som er gensidigt
+                forbundne med hinanden.
+
+                <br><br>Områderne er:
+
+              </p>
+              <div class="liste">
+
+                <ul>
+                  <li>Eleverne
+                  </li>
+                  <li>Rammerne
+                  </li>
+                  <li>Formålene og målene
+                  </li>
+                  <li>Indholdet
+
+                  </li>
+                  <li>Læreprocessen
+                  </li>
+                  <li>Evaluering og feedback
+                  </li>
+                </ul>
+              </div>
+              <div class="article-divider mx-auto">
+                <img class="mx-auto d-block" src="img/article-divider.svg" alt="grøn streg">
+
+              </div>
+
+              <div class=" reference d-flex flex-column p-2">
+
+
+                <em class="mx-auto kilde">[1] Hilbert Meyer, Hvad er god undervisning, side 30-34, Hans Reitzels Forlag, 2005.
+                </em>
+
+                <em class="mx-auto kilde">[2] Hilde Hiim og Else Hippe, Læring gennem oplevelse, forståelse og handling, Gyldendals lærerbibliotek, 2001</em>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="article-nav row">
+            <div class="col-6 d-flex justify-content-start">
+              <a href="#">Afslut forløb</a>
             </div>
 
+            <div class="col-6 d-flex justify-content-end">
+              <a href="#">&lsaquo;&nbsp;Tilbage</a>
+              <a href="#">Fortsæt&nbsp;&rsaquo;</a>
+
+            </div>
           </div>
 
         </div>
@@ -257,7 +494,7 @@
 
 
             <!--__________________________________ SideBar Kollonne _________________________________-->
-            <div class="col-6 col-xl-12 p-3  description-box">
+            <div class="col-sm-12 col-md-6 col-xl-12 p-3  description-box">
               <img class=" mx-auto d-block forfatter rounded-circle" src="img/myding.jpg" alt="Forfatter">
               <div class="container pt-4 p-0 m-0">
                 <div class="container p-0 m-0 d-flex flex-row flex-fix">
@@ -284,7 +521,7 @@
 
 
             <!--__________________________________ SideBar Kollonne _________________________________-->
-            <div class="col-6 col-xl-12 p-3 m-0 gap2 description-box">
+            <div class="col-sm-12 col-md-6 col-xl-12 p-3 m-0 gap2 description-box">
               <div class="container p-0 m-0 ">
                 <h2>Beskrivelse:</h2>
                 <p>Du har en helt særlig rolle som den ubetingede leder af klassen. Du er den, der sammen med eleverne, skaber et godt klassemiljø og får klassen til at trives og lære. Din relationen til eleverne er asymmetrisk af flere årsager: Du
@@ -292,6 +529,8 @@
 
                   Forskningen bekræfter gode relationers betydning for både elevernes trivsel og læringsudbytte. Tidligere professor ved DPU Sven Erik Nordenbo udtaler i et interview, at han ligefrem er overrasket over, hvor stor betydning
                   underviserens relationskompetence har:</p>
+
+
               </div>
 
             </div>
@@ -300,32 +539,48 @@
           <div class="col-12 p-3 m-0 gap description-box">
             <div class="container p-0 m-0 ">
               <h2>Ressourcer i dette forløb:</h2>
-              <div class="container pt-4 p-0 m-0">
-                <div class="container p-0 m-0 d-flex flex-row bottom-line">
+              <div class="container p-0 m-0 d-flex flex-row bottom-line" onclick="window.location.href='#';">
+                <div class="container p-0 m-0 d-flex flex-row">
                   <h2>1:</h2>
                   <p>&nbsp;Konkrete tips til hver lærerrolle</p>
                 </div>
-                <div class="container p-0 m-0 d-flex flex-row bottom-line">
+                <div class="container-fluid p-0 m-0">
+                  <p style="    width: 100%;" class="text-end">&nbsp;&rsaquo;</p>
+                </div>
+              </div>
+              <div class="container p-0 m-0 d-flex flex-row bottom-line" onclick="window.location.href='#';">
+                <div class="container p-0 m-0 d-flex flex-row">
+
                   <h2>2:</h2>
                   <p>&nbsp;Konkrete tips til skarpe spørgsmål</p>
                 </div>
-                <div class="container p-0 m-0 d-flex flex-row bottom-line">
+                <div class="container-fluid p-0 m-0">
+
+                  <p style="    width: 100%;" class="text-end">&nbsp;&rsaquo;</p>
+                </div>
+              </div>
+              <div class="container p-0 m-0 d-flex flex-row bottom-line" onclick="window.location.href='#';">
+                <div class="container p-0 m-0 d-flex flex-row">
                   <h2>3:</h2>
                   <p>&nbsp;Seks konkrete tilgange</p>
                 </div>
+                <div class="container-fluid p-0 m-0">
 
+                  <p style="    width: 100%;" class="text-end">&nbsp;&rsaquo;</p>
+                </div>
               </div>
-            </div>
 
+            </div>
           </div>
 
 
-          <div class="col-12 p-3 m-0 gap description-box">
+
+          <div class="col-12 p-3 m-0 gap description-box" onclick="window.location.href='#';" style="cursor:pointer">
 
 
 
 
-            <div class="row p-0 m-0 g-0">
+            <div class="row p-0 m-0 g-0 ">
 
 
 
@@ -344,7 +599,7 @@
             </div>
 
           </div>
-          <div class="col-12 p-3 m-0 gap description-box">
+          <div class="col-12 p-3 m-0 gap description-box" onclick="window.location.href='#';" style="cursor:pointer">
 
 
 
@@ -369,12 +624,13 @@
 
           </div>
 
-
-
-
-
         </div>
+
+
+
+
       </div>
+    </div>
 
 
 
@@ -416,7 +672,7 @@
           <svg height="10" width="100">
             <line x1="0" y1="0" x2="100" y2="0" style="stroke:#F4F5F0;stroke-width:3" />
           </svg>
-          <div class="container w-75 ">
+          <div class="container">
 
             <h3 class="green mt-3" style="margin-left:10px;margin-bottom:-10px;">Dine kvalifikationer:</h3>
 
