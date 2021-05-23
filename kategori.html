@@ -38,6 +38,9 @@
 
     }
 
+    footer {
+      margin-top: 100px;
+    }
 
     /* <!--__________________________________ Article _________________________________--> */
 
@@ -376,8 +379,26 @@
 
 
     <div id="content">
+      <!--_________ HEADUNIT __________-->
+      <div class="container-fluid m-0 p-0 header">
 
-      <div class="row  p-1 d-flex justify-content-center">
+
+        <!--_________LOGO CONTAINER __________-->
+        <div class="container-fluid logobox ">
+          <div class="container">
+            <a href="index.html">
+              <img class="logo" src="ico/logo_groen.svg" alt="Nordic Schools skrevet med den flotte font Cabin Sketch i grøn farve.">
+            </a>
+          </div>
+        </div>
+        <!--_________ DIVIDER __________-->
+
+        <div class="container-fluid divider-top shadow ">
+
+        </div>
+      </div>
+
+      <div class="row pt-4 p-1 d-flex justify-content-center">
         <!--__________________________________ Wrapper til venstre sidebar _________________________________-->
         <div class="col-12 col-xl-8">
           <!--__________________________________ Artikelcontainer _________________________________-->
@@ -474,12 +495,12 @@
 
           <div class="article-nav row">
             <div class="col-6 d-flex justify-content-start">
-              <a href="#">Afslut forløb</a>
+              <a href="javascript:history.back()">Afslut forløb</a>
             </div>
 
             <div class="col-6 d-flex justify-content-end">
-              <a href="#">&lsaquo;&nbsp;Tilbage</a>
-              <a href="#">Fortsæt&nbsp;&rsaquo;</a>
+              <a style="display:none" href="javascript:history.back()">&lsaquo;&nbsp;Tilbage</a>
+              <a href="kategori-side2">Fortsæt&nbsp;&rsaquo;</a>
 
             </div>
           </div>
@@ -630,26 +651,25 @@
 
 
       </div>
+
+
+
+
+
+
+      <!--__________________________________ FOOTER _________________________________-->
+      <footer class="d-flex justify-content-start  row">
+        <div class="col-6 ">
+          <h4>Tlf: 34234354 </h4>
+          <h4>Email: info@nordicschools.com </h4>
+        </div>
+
+        <div class="col-6  ">
+          <h4>
+            Esthersvej 14<br> 2900 Hellerup</h4>
+        </div>
+      </footer>
     </div>
-
-
-
-    </div>
-
-
-
-    <!--__________________________________ FOOTER _________________________________-->
-    <footer class="d-flex justify-content-start  row">
-      <div class="col-6 ">
-        <h4>Tlf: 34234354 </h4>
-        <h4>Email: info@nordicschools.com </h4>
-      </div>
-
-      <div class="col-6  ">
-        <h4>
-          Esthersvej 14<br> 2900 Hellerup</h4>
-      </div>
-    </footer>
     <!--__________________________________ NAVIGATION _________________________________-->
 
 
