@@ -35,7 +35,7 @@
 }
 
 @font-face {
-  font-family: 'Frutiger LT Pro 48 Light Condensed Italic';
+  font-family: 'Frutiger LT Pro 48 Light Condensed Italic' !important;
   font-style: normal;
   font-weight: normal;
   src: local('Frutiger LT Pro 48 Light Condensed Italic'), url('font/FrutigerLTProLightCnIta.woff') format('woff');
@@ -142,6 +142,19 @@ a {
   padding-right: 15px;
   width: 150px;
   height: 100%;
+}
+
+#content .micro-copy {
+  font-size: 12px !important;
+  line-height: 1.2;
+  font-family: 'Frutiger LT Pro 48 Light Condensed Italic';
+}
+
+.description-box {
+  -webkit-box-shadow: 5px 9px 6px #00000016;
+  -moz-box-shadow: 5px 9px 6px #00000016;
+  box-shadow: 5px 9px 6px #00000016;
+  border: 2px solid #4A984D;
 }
 
 /* <!--__________________________________ BODY _________________________________--> */
@@ -956,6 +969,12 @@ footer h4 {
     right: 35px;
   }
 
+  #content .micro-copy {
+    font-size: 12px !important;
+    line-height: 1.2;
+    font-family: 'Frutiger LT Pro 48 Light Condensed Italic';
+  }
+
   .bar {
     transform: scale(1);
   }
@@ -1365,6 +1384,12 @@ footer h4 {
     padding: 1rem;
   }
 
+  #content .micro-copy {
+    font-size: 12px !important;
+    line-height: 1.2;
+    font-family: 'Frutiger LT Pro 48 Light Condensed Italic';
+  }
+
   p {
     font-size: 20px !important;
     line-height: 1.2;
@@ -1400,6 +1425,12 @@ footer h4 {
 @media (min-width: 1202px) {
   .fixed-height {
     height: 815px;
+  }
+
+  #content .micro-copy {
+    font-size: 12px !important;
+    line-height: 1.2;
+    font-family: 'Frutiger LT Pro 48 Light Condensed Italic';
   }
 
   .divider-gfx1 {
@@ -1476,6 +1507,13 @@ footer h4 {
 }
 
 @media (min-width: 1502px) {
+  #content .micro-copy {
+    font-size: 12px !important;
+    line-height: 1.2;
+    margin-top: -50px;
+    font-family: 'Frutiger LT Pro 48 Light Condensed Italic';
+  }
+
   .divider-gfx1 {
     height: 70px;
     width: 200% !important;

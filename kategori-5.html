@@ -57,7 +57,6 @@
 
     .article-nav a {
       font-family: 'Frutiger LT Pro 67 Bold Condensed';
-      margin: 10px;
       width: 100%;
       text-align: center;
       padding: 10px 30px;
@@ -70,6 +69,7 @@
     .articlecontent {
       background-color: #f9fafb;
     }
+
 
     .articlecontent .img-model {
       width: 90%;
@@ -108,14 +108,22 @@
     }
 
     li {
+      margin-bottom: 0.8rem;
       font-size: 1rem !important;
       font-family: 'Frutiger LT Pro 45 Light';
     }
 
     .liste {
       list-style-type: circle;
-      padding-left: 3rem !important;
-      padding-right: 3rem !important;
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+
+    .del-txt {
+
+      text-align: center;
+      font-size: 1rem !important;
+      font-family: 'Frutiger LT Pro 45 Light' !important;
     }
 
     #article-quote p {
@@ -241,7 +249,18 @@
       font-size: 12px !important;
     }
 
-    @media (min-width: 760px) {
+    .character {
+      position: absolute;
+      width: 350px;
+      top: -49px;
+    }
+
+    .sprite {
+      position: relative;
+      height: 300px;
+    }
+
+    @media (min-width: 720px) {
       #article-quote p {
         font-size: 2.1rem !important;
       }
@@ -282,8 +301,8 @@
 
       .gap2 {
         margin-top: 0px !important;
-        border-left: 10px solid #f4f5f0;
-        border-top: 0px solid #f4f5f0;
+        border-left: 10px solid #f4f5f0 !important;
+        border-top: 0px solid #f4f5f0 !important;
         min-height: 439.4px;
       }
 
@@ -305,6 +324,25 @@
         background-color: #72AE73;
         color: #F4F5F0;
         text-decoration: none;
+      }
+
+      .liste {
+        list-style-type: circle;
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+      }
+
+      .character {
+        position: absolute;
+        width: 417px;
+        left: -65px;
+      }
+    }
+
+
+    @media (min-width: 922px) {
+      .gap2 {
+        border-top: 0px solid #f4f5f0 !important;
       }
     }
 
@@ -408,7 +446,6 @@
 
     gtag('config', 'G-6Z7TQN0CSP');
   </script>
-
 </head>
 
 <body>
@@ -444,121 +481,147 @@
 
             <!--__________________________________ ArtikelCOntent:  Overskrift _________________________________-->
             <div class="HeaderBox align-top">
-              <h1> Introtekst: Planlægge og organisere </h1>
-              <h3>Side: 1/5</h3>
+              <h1> Refleksionsspørgsmål til dig og dit team: Planlægge og organisere </h1>
+              <h3>Side: 4/5</h3>
             </div>
             <!--__________________________________ ArtikelCOntent:  Indhold _________________________________-->
             <div class="articlecontent align-baseline ">
 
 
-              <div id="article-quote">
-                <p>”Intet andet kendetegn på god undervisning har stærkere indflydelse på en vellykket læring for eleverne end en klar strukturering af undervisningen.”
-                </p>
-                <h3>-&nbsp;Hilbert Meyer <sup>[2]</sup></h3>
+
+              <h2>Refleksionsspørgsmål til dig og dit team</h2>
+              <p>Her finder du en række spørgsmål, som alle har til hensigt at få dig (og måske også dit team) til at reflektere over, hvordan I “planlægger og organiserer” i praksis.<br><br>Spørgsmålene er inddelt i to forskellige typer: Individuel
+                refleksion og teamrefleksion.
+              </p>
 
 
-              </div>
-              <h2> Hvor detaljeret skal planen være? </h2>
-              <p>Der findes mange former for planer: Lektionsplaner, dagsplaner, ugeplaner, månedsplaner, årsplaner, etc. De fleste lærere er forpligtede til at lave både ugeplaner og årsplaner, men det kan være forskelligt hvilket
-                detaljeringsniveau, den enkelte lærer arbejder på.</p>
-              <div style="margin-bottom:-70px;" class="container-fluid text-center">
-                <div class="spacer-m">
+              <div class="row">
+
+                <div class="col-sm-12 col-md-8">
+
+                  <h3>1. Individuel refleksion:
+                  </h3>
+                  <p style="padding-right: 0rem !important;"> Spørgsmålene i den første del henvender sig til dig selv. Når du har besvaret spørgsmålene, har du mulighed for at udfylde Praksisplanen, som hjælper dig med at konkretisere de næste
+                    skridt.
+                  </p>
+
+                  <h3>2. Teamrefleksion:
+                  </h3>
+                  <p style="padding-right: 0rem !important;"> Teammedlemmernes individuelle refleksion bruges som afsæt til en fælles diskussion. Formålet her er at få endnu bedre indblik i hinandens praksis og at konkretisere, hvordan I på
+                    teamniveau kan samarbejde om at blive endnu bedre
+                    til
+                    at planlægge og organisere undervisningen.
+                  </p>
+                </div>
+                <div class="col-sm-12 col-md-4 sprite">
+                  <img class="character" src="img/9.1.png" alt="Kvindelig lærer vinker">
 
                 </div>
-                <em>Artiklen forsætter under billedet</em>
-              </div>
-              <img class=" img-full-width d-block mx-auto" src="img/planlægning.jpg" alt="Illustrerende billede til artikel">
-              <h2>Hvad siger lærerne og forskerne?</h2>
-              <p> Både lærere og forskere er enige om vigtigheden af en god plan. Den tyske didaktiker Hilbert Meyer, fremhæver også vigtigheden af en god plan.
-                <br><br>Den gør, at eleverne:</p>
-              <div class="liste">
 
-                <ul>
-                  <li>Forstår hensigten med undervisningen.
-                  </li>
-                  <li>Oplever, at der er en rød tråd i undervisningens indhold.
-                  </li>
-                  <li>Forstår det faglige og sociale indhold.
-                  </li>
-                  <li>Føler sig trygge og kan overholde de regler og aftaler, der er lavet.
-                  </li>
-                  <li>Undlader at forstyrre hinanden. </li>
-                </ul>
+
               </div>
 
 
-              <h2>Hvordan gør man så i praksis?</h2>
-              <p> Planlægning skal gerne være en god investering. Noget som kommer flerfoldigt tilbage, fordi du har gjort dig overvejelser, som sætter dig i stand til at handle mere velovervejet, frit og fleksibelt i selve
-                undervisningssituationen.<br><br>Der findes ikke et facit på, hvordan en plan skal udarbejdes. Vores erfaringer peger dog i retning af, at det kan være en hjælp at have en skabelon at støtte sig til. Det skaber refleksion og giver
-                træning i at finde ens egen måde at planlægge undervisning på. </p>
-              <div style="margin-bottom:-70px;" class="container-fluid text-center">
-                <div class="spacer-m">
 
-                </div>
-                <em>Artiklen forsætter under billedet</em>
+
+
+              <div class="article-divider mx-auto">
+                <img class="mx-auto d-block" src="img/article-divider.svg" alt="grøn streg">
+
               </div>
-              <img class=" img-full-width d-block mx-auto" src="img/relationer.jpg" alt="Illustrerende billede til artikel">
-              <h2> Tjek din plan med Kompetencehjulet </h2>
-              <p>Du kan bruge Kompetencehjulet til at kvalitetssikre en plan, du allerede har lavet.
-              </p>
-              <img data-enlargeable="" width="100" style="cursor: zoom-in" class=" img-model d-block mx-auto img-enlargeable" src="img/kompetencehjulet.svg" alt="Illustrerende billede til artikel">
 
-              <p class="mx-auto micro-copy text-center">Klik på billedet for at forstørre det </p>
-              <h2> Planlægningsmodellen - de seks faktorer i en god plan</h2>
-              <p>Vores planlægningsmodel tager udgangspunkt i Hilde Hiim og Else Hippes udgave af den didaktiske relationsmodel <sup>[2]</sup>. Planlægningsmodellen er ligeledes relationel, fordi den rummer seks forskellige områder, som er gensidigt
-                forbundne med hinanden.
+              <h2>Individuel refleksion</h2>
 
-                <br><br>Områderne er:
+              <p style="
+                font-family: 'Frutiger LT Pro 48 Light Condensed Italic'!important;">Vurdér dig selv på en skala 1-5, hvor 5 er bedst.
 
               </p>
+
               <div class="liste">
-
-                <ul>
-                  <li>Eleverne
+                <ol>
+                  <li>Det er vigtigt “at planlægge og organisere” min undervisning
                   </li>
-                  <li>Rammerne
-                  </li>
-                  <li>Formålene og målene
-                  </li>
-                  <li>Indholdet
-
-                  </li>
-                  <li>Læreprocessen
-                  </li>
-                  <li>Evaluering og feedback
-                  </li>
-                </ul>
+                  <li>Min planlægning og organisering af de enkelte lektioner er en støtte for både mig og mine elever</li>
+                  <li>Min planlægning og organisering af de mellemlange forløb er en støtte for både mig og mine elever</li>
+                  <li>Min planlægning og organisering i forbindelse med udarbejdelse af årsplanerne en støtte for både mig, mine elever og mit team</li>
+                  <li>Jeg har tilstrækkelig støtte fra mine kollegaer i planlægningsarbejdet</li>
+                  <li>Vi har et stærkt fælles sprog til at planlægge og organisere på skole- og teamniveau</li>
+                  <li>Jeg kunne have gavn af at anvende en planlægningsskabelon</li>
+                </ol>
               </div>
               <div class="article-divider mx-auto">
                 <img class="mx-auto d-block" src="img/article-divider.svg" alt="grøn streg">
 
               </div>
 
-              <div class=" reference d-flex flex-column p-2">
 
+              <h2>Flere spørgsmål
+              </h2>
 
-                <em class="mx-auto kilde">[1] Hilbert Meyer, Hvad er god undervisning, side 30-34, Hans Reitzels Forlag, 2005.
-                </em>
+              <div class="liste">
 
-                <em class="mx-auto kilde">[2] Hilde Hiim og Else Hippe, Læring gennem oplevelse, forståelse og handling, Gyldendals lærerbibliotek, 2001</em>
+                <ol>
+                  <li>Hvad kendetegner en dårlig plan for dig?
+
+                  </li>
+                  <li>Hvad er en god plan for dig? Hvad skal den kunne?
+                  </li>
+                  <li>Har I fælles planlægning i teamet?</li>
+                  <ul>
+                    <li>Hvis ja: Hvad får I ud af det? Hvad får eleverne ud af det?</li>
+                    <li>Hvis nej: Hvad får I ud af det? Hvad får eleverne ud af det?</li>
+                  </ul>
+
+                  <li>Hvad har du brug for, hvis du skal blive til at planlægge og organisere undervisningen (hhv. den enkelte lektion, mellemlange forløb og årsplanen)</li>
+
+                </ol>
+
+              </div>
+              <div class="spacer-m">
+
+              </div>
+              <div class="article-divider mx-auto">
+                <img class="mx-auto d-block" src="img/article-divider.svg" alt="grøn streg">
+
               </div>
 
-            </div>
-          </div>
 
+              <h2>Til teamet
+              </h2>
+
+              <div class="liste">
+
+                <ol>
+                  <li>Sammenlign jeres besvarelser af de individuelle refleksionsspørgsmål. Hvilke refleksioner giver jeres svarmønstre anledning til?
+
+                  </li>
+                  <li>Hvad fungerer godt I jeres samarbejde om at planlægge og organisere undervisningen?
+                  </li>
+                  <li>Hvordan kan I styrke arbejdet med at planlægge og organisere undervisningen endnu bedre i jeres team?</li>
+
+                </ol>
+              </div>
+              <div class="spacer-m">
+
+              </div>
+              <img class=" img-fluid d-block mx-auto" src="img/team.svg" alt="Illustrerende billede til artikel">
+
+            </div>
+
+          </div>
           <div class="article-nav row">
             <div class="col-12 col-md-6 d-flex justify-content-start">
-              <a href="index.html">Afslut forløb</a>
+              <a style="display:none" href="index.html">Afslut forløb</a>
             </div>
 
             <div class="col-12 col-md-6 d-flex justify-content-end">
-              <a href="javascript:history.back()">&lsaquo;&nbsp;Tilbage</a>
-              <a href="kategori-2.html">Fortsæt&nbsp;&rsaquo;</a>
+              <a style="display:none" href="kategori-2.html">&lsaquo;&nbsp;Tilbage</a>
+              <a href="kategori-4.html">Afslut forløb&nbsp;&rsaquo;</a>
 
             </div>
           </div>
-
         </div>
+
 
         <!--__________________________________ wrapper til sidebar _________________________________-->
         <div class="col-12 col-xl-2   align-top">
@@ -611,7 +674,8 @@
                 <div class="col-6 col-xs-12 col-xl-12  p-2 m-0">
 
                   <h2>Om forfatter:</h2>
-                  <p>Her står der en helt masse om Kasper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis felis quam, sodales a diam at, commodo ultricies justo. Phasellus convallis eleifend enim consequat commodo. Vivamus id lobortis
+                  <p>Her står der en helt masse om Kasper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis felis quam, sodales a diam at, commodo ultricies justo. Phasellus convallis eleifend enim consequat commodo. Vivamus id
+                    lobortis
                     odio.
                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc nec magna mauris. Etiam vitae arcu suscipit, porta.</p>
                 </div>
@@ -625,15 +689,13 @@
 
             <!--__________________________________ Kollonn Wrapper slut  _________________________________-->
           </div>
-
-
           <div class="col-12 p-3 m-0 gap description-box">
             <div class="container p-0 m-0 ">
               <h2>Ressourcer i dette forløb:</h2>
               <div class="container p-0 m-0 d-flex flex-row bottom-line" onclick="window.location.href='#';">
                 <div class="container p-0 m-0 d-flex flex-row">
                   <h2>1:</h2>
-                  <p style="width: 250px;">&nbsp;Konkrete tips til hver lærerrolle</p>
+                  <p>&nbsp;Planlægningsmodellen - Tjekliste</p>
                 </div>
                 <div class="container-fluid p-0 m-0">
                   <p style="    width: 100%;" class="text-end">&nbsp;&rsaquo;</p>
@@ -643,7 +705,7 @@
                 <div class="container p-0 m-0 d-flex flex-row">
 
                   <h2>2:</h2>
-                  <p style="width: 250px;">&nbsp;Konkrete tips til skarpe spørgsmål</p>
+                  <p>&nbsp;Planlægningsmodellen - Lang</p>
                 </div>
                 <div class="container-fluid p-0 m-0">
 
@@ -653,7 +715,7 @@
               <div class="container p-0 m-0 d-flex flex-row bottom-line" onclick="window.location.href='#';">
                 <div class="container p-0 m-0 d-flex flex-row">
                   <h2>3:</h2>
-                  <p style="width: 250px;">&nbsp;Seks konkrete tilgange</p>
+                  <p>&nbsp;Planlægningsmodellen - Kort</p>
                 </div>
                 <div class="container-fluid p-0 m-0">
 
@@ -714,15 +776,12 @@
 
           </div>
 
+
+
+
+
         </div>
-
-
-
-
       </div>
-
-
-
 
 
 
@@ -739,6 +798,8 @@
         </div>
       </footer>
     </div>
+
+
     <!--__________________________________ NAVIGATION _________________________________-->
 
 
@@ -760,40 +821,40 @@
         <svg class="d-flex mx-auto" height="5" width="50">
           <svg height="10" width="100">
             <line x1="0" y1="0" x2="100" y2="0" style="stroke:#F4F5F0;stroke-width:3" />
-          </svg>
-          <div class="container">
+          </svg></svg>
+        <div class="container">
 
-            <h3 class="green mt-3" style="margin-left:10px;margin-bottom:-10px;">Dine kvalifikationer:</h3>
+          <h3 class="green mt-3" style="margin-left:10px;margin-bottom:-10px;">Dine kvalifikationer:</h3>
 
+        </div>
+        <div class="row qualities p-2 m-0 ">
+          <div class="col-6 mx-auto p-3 pb-0">
+
+            <img src="ico/kat5_ikon.svg" alt="Kategori 5 – Starte og slutte stærkt">
+            <h3>Kategori 5:<br>Starte og slutte stærkt</h3>
           </div>
-          <div class="row qualities p-2 m-0 ">
-            <div class="col-6 mx-auto p-3 pb-0">
-
-              <img src="ico/kat5_ikon.svg" alt="Kategori 5 – Starte og slutte stærkt">
-              <h3>Kategori 5:<br>Starte og slutte stærkt</h3>
-            </div>
-            <div class="col-6 mx-auto p-3 pb-0">
-              <img src=" ico/kat6_ikon.svg" alt="Kategori 6 – Motivere og skabe mening">
-              <h3>Kategori 6:<br>Motivere og skabe mening</h3>
-            </div>
-            <div class="col-6 mx-auto p-3 pt-0">
-              <img src=" ico/kat10_ikon.svg" alt="Kategori 11: Danne relationer til hver enkelt elev">
-              <h3>Kategori 11:<br>Danne relationer til hver enkelt elev</h3>
-            </div>
-            <div class="col-6 mx-auto p-3 pt-0">
-              <img src=" ico/kat12_ikon.svg" alt="Kategori 12: Få eleverne til at danne relationer til hinanden">
-              <h3>Kategori 12:<br>Få eleverne til at danne relationer til hinanden</h3>
-            </div>
-
+          <div class="col-6 mx-auto p-3 pb-0">
+            <img src=" ico/kat6_ikon.svg" alt="Kategori 6 – Motivere og skabe mening">
+            <h3>Kategori 6:<br>Motivere og skabe mening</h3>
+          </div>
+          <div class="col-6 mx-auto p-3 pt-0">
+            <img src=" ico/kat10_ikon.svg" alt="Kategori 11: Danne relationer til hver enkelt elev">
+            <h3>Kategori 11:<br>Danne relationer til hver enkelt elev</h3>
+          </div>
+          <div class="col-6 mx-auto p-3 pt-0">
+            <img src=" ico/kat12_ikon.svg" alt="Kategori 12: Få eleverne til at danne relationer til hinanden">
+            <h3>Kategori 12:<br>Få eleverne til at danne relationer til hinanden</h3>
           </div>
 
+        </div>
 
-          <div class="aside-content">
-            <div class="container d-flex justify-content-between">
-              <button class="button buttonwhite" onclick="location.href='indstilligner.html';"> Indstillinger </button>
-              <button class="button buttonwhite" onclick="location.href='login_oversigt.html';"> Logud </button>
-            </div>
+
+        <div class="aside-content">
+          <div class="container d-flex justify-content-between">
+            <button class="button buttonwhite" onclick="location.href='indstilligner.html';"> Indstillinger </button>
+            <button class="button buttonwhite" onclick="location.href='login_oversigt.html';"> Logud </button>
           </div>
+        </div>
       </div>
       <div class="aside-section aside-right">
         <div class="container-fluid pt-5" id="usermobile">
