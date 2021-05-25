@@ -42,6 +42,23 @@
       color: #72AE73 !important;
     }
 
+
+    a {
+      text-decoration: none;
+      font-size: inherit;
+      color: inherit;
+      white-space: pre-wrap;
+      /* CSS3 */
+      white-space: -moz-pre-wrap;
+      /* Mozilla, since 1999 */
+      white-space: -pre-wrap;
+      /* Opera 4-6 */
+      white-space: -o-pre-wrap;
+      /* Opera 7 */
+      word-wrap: break-word;
+      /* Internet Explorer 5.5+ */
+    }
+
     /* <!--__________________________________ Article _________________________________--> */
     .articlecontainer {
       border: 6px solid #72AE73;
@@ -630,16 +647,17 @@
           <div class="col-12 p-3 m-0 gap description-box">
             <div class="container p-0 m-0 ">
               <h2>Ressourcer i dette forløb:</h2>
-              <div class="container p-0 m-0 d-flex flex-row bottom-line" onclick="window.location.href='#';">
+              <div class="container p-0 m-0 d-flex flex-row bottom-line" onclick="window.location.href='materialesamling.html';">
                 <div class="container p-0 m-0 d-flex flex-row">
                   <h2>1:</h2>
                   <p style="width: 250px;">&nbsp;Konkrete tips til hver lærerrolle</p>
+
                 </div>
                 <div class="container-fluid p-0 m-0">
                   <p style="    width: 100%;" class="text-end">&nbsp;&rsaquo;</p>
                 </div>
               </div>
-              <div class="container p-0 m-0 d-flex flex-row bottom-line" onclick="window.location.href='#';">
+              <div class="container p-0 m-0 d-flex flex-row bottom-line" onclick="window.location.href='materialesamling.html';">
                 <div class="container p-0 m-0 d-flex flex-row">
 
                   <h2>2:</h2>
@@ -650,7 +668,7 @@
                   <p style="    width: 100%;" class="text-end">&nbsp;&rsaquo;</p>
                 </div>
               </div>
-              <div class="container p-0 m-0 d-flex flex-row bottom-line" onclick="window.location.href='#';">
+              <div class="container p-0 m-0 d-flex flex-row bottom-line" onclick="window.location.href='materialesamling.html';">
                 <div class="container p-0 m-0 d-flex flex-row">
                   <h2>3:</h2>
                   <p style="width: 250px;">&nbsp;Seks konkrete tilgange</p>
@@ -746,7 +764,7 @@
     <svg class="bobbel" height="100" width="100">
       <circle cx="200" cy="200" r="200" stroke="#F4F5F0" stroke-width="5" fill="#4A984D" />
     </svg>
-    <label for="myInput">
+    <label id="burger-knappen" for="myInput">
       <span class="bar top"></span>
       <span class="bar middle"></span>
       <span class="bar bottom"></span>

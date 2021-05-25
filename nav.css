@@ -488,6 +488,7 @@ footer {
 
 .copy-cta {
   width: 100%;
+  font-size: 1.4rem !important;
 }
 
 .oversigt {
@@ -641,6 +642,8 @@ footer {
   font-weight: 500;
 }
 
+s
+
 /* <!--__________________________________ Bruger UI _________________________________--> */
 .wrapper-brugerui {
   display: flex;
@@ -723,11 +726,11 @@ input[type="checkbox"]:checked~aside .aside-right {
   transform: translateX(0%);
 }
 
-input[type="checkbox"]:checked~label .bar {
+input[type="checkbox"]:checked~#burger-knappen .bar {
   background-color: #f4f5f0;
 }
 
-input[type="checkbox"]:checked~label .top {
+input[type="checkbox"]:checked~#burger-knappen .top {
   -webkit-transform: translateY(0px) rotateZ(45deg);
   -moz-transform: translateY(0px) rotateZ(45deg);
   -ms-transform: translateY(0px) rotateZ(45deg);
@@ -735,7 +738,7 @@ input[type="checkbox"]:checked~label .top {
   transform: translateY(0px) rotateZ(45deg);
 }
 
-input[type="checkbox"]:checked~label .bottom {
+input[type="checkbox"]:checked~#burger-knappen .bottom {
   -webkit-transform: translateY(-15px) rotateZ(-45deg);
   -moz-transform: translateY(-15px) rotateZ(-45deg);
   -ms-transform: translateY(-15px) rotateZ(-45deg);
@@ -743,7 +746,7 @@ input[type="checkbox"]:checked~label .bottom {
   transform: translateY(-15px) rotateZ(-45deg);
 }
 
-input[type="checkbox"]:checked~label .middle {
+input[type="checkbox"]:checked~#burger-knappen .middle {
   width: 0;
 }
 
@@ -763,7 +766,7 @@ input[type="checkbox"]:checked~label .middle {
 }
 
 /* <!--__________________________________ BURGER cONTAINER _________________________________--> */
-label {
+#burger-knappen {
   bottom: 10px;
   right: 10px;
   display: inline-block;
@@ -858,7 +861,7 @@ label {
 .explain-copy {
   color: #72AE73;
   font-family: 'Frutiger LT Pro 48 Light Condensed Italic' !important;
-  font-size: 18px !important;
+  font-size: 15px !important;
   text-align: center;
   padding: 1rem !important;
   margin-top: 2rem !important;
@@ -907,6 +910,11 @@ footer h4 {
 @media (min-width: 750px) {
   h1 {
     font-size: 40px;
+  }
+
+  .copy-cta {
+    width: 100%;
+    font-size: 1.1rem !important;
   }
 
   .divider-top {
@@ -979,7 +987,7 @@ footer h4 {
     transform: scale(1);
   }
 
-  label {
+  #burger-knappen {
     bottom: 8px;
     right: 8px;
     transform: scale(1);
@@ -1503,6 +1511,13 @@ footer h4 {
 
   .stylish-subheader {
     font-size: 100px !important;
+  }
+
+  .aside-section .container {
+    padding: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 0;
+    font-size: 2rem !important;
   }
 }
 
