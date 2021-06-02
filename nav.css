@@ -1460,7 +1460,7 @@ footer h4 {
     margin-left: -72% !important;
     margin-top: -9px !important;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .divider-gfx2 {

@@ -1,5 +1,12 @@
 {
- "name": "App",
+  "name": "Nordic Schools",
+  "short_name": "NS",
+  "theme_color": "#72ae73",
+  "background_color": "#f4f5f0",
+  "display": "minimal-ui",
+  "orientation": "portrait",
+  "scope": "/pas",
+  "start_url": "/eksamen"
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
